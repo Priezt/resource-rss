@@ -36,19 +36,24 @@ echo YYETS
 yyets() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | $FMR $2 ; }
 yyets_rmvb() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | grep -i rmvb | $FMR $2 ; }
 
-yyets http://www.yyets.com/php/resource/26753 AvengersS02
-yyets http://www.yyets.com/php/resource/26745 Tron
-yyets http://www.yyets.com/php/resource/26737 UltimateSpiderMan
-yyets_rmvb http://www.yyets.com/php/resource/10910 SuitsS02
-yyets_rmvb http://www.yyets.com/php/resource/11013 Fringe
-yyets_rmvb http://www.yyets.com/php/resource/11037 Merlin
-yyets_rmvb http://www.yyets.com/php/resource/11015 Supernatural
-yyets_rmvb http://www.yyets.com/php/resource/11005 TBBT
-yyets_rmvb http://www.yyets.com/php/resource/26779 Arrow
-yyets_rmvb http://www.yyets.com/php/resource/11057 TheWalkingDead
-yyets_rmvb http://www.yyets.com/php/resource/11007 Mentalist
-yyets_rmvb http://www.yyets.com/php/resource/26195 Dexter
-yyets_rmvb http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
+# Some thing goes wrong when fetching yyets pages using phantomjs, so comment for now
+
+#yyets http://www.yyets.com/php/resource/26753 AvengersS02
+#yyets http://www.yyets.com/php/resource/26745 Tron
+#yyets http://www.yyets.com/php/resource/26737 UltimateSpiderMan
+#yyets_rmvb http://www.yyets.com/php/resource/10910 SuitsS02
+#yyets_rmvb http://www.yyets.com/php/resource/11013 Fringe
+#yyets_rmvb http://www.yyets.com/php/resource/11037 Merlin
+#yyets_rmvb http://www.yyets.com/php/resource/11015 Supernatural
+#yyets_rmvb http://www.yyets.com/php/resource/11005 TBBT
+#yyets_rmvb http://www.yyets.com/php/resource/26779 Arrow
+#yyets_rmvb http://www.yyets.com/php/resource/11057 TheWalkingDead
+#yyets_rmvb http://www.yyets.com/php/resource/11007 Mentalist
+#yyets_rmvb http://www.yyets.com/php/resource/26195 Dexter
+#yyets_rmvb http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
+
+# Below: not interesting any more
+
 #yyets_rmvb http://www.yyets.com/php/resource/27156 666ParkAvenue
 #yyets http://www.yyets.com/php/resource/27274 BeautyAndTheBeast
 #yyets http://www.yyets.com/php/resource/11049 AmericanHorrorStory
