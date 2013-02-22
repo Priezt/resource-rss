@@ -34,25 +34,24 @@ echo YYETS
 #cat $YYETS_TEMP | grep -i 'Fringe' | $FMR Fringe
 
 yyets() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | $FMR $2 ; }
-yyets_rmvb() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | grep -i rmvb | $FMR $2 ; }
+yyets_rmvb_mp4() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | egrep -i 'rmvb|mp4' | $FMR $2 ; }
 
-yyets http://www.yyets.com/php/resource/26753 AvengersS02
-yyets http://www.yyets.com/php/resource/26745 Tron
-yyets http://www.yyets.com/php/resource/26737 UltimateSpiderMan
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/26753 AvengersS02
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/26745 Tron
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/26737 UltimateSpiderMan
 yyets http://www.yyets.com/php/resource/29024 UltraQ
-yyets http://www.yyets.com/php/resource/10910 SuitsS02
-yyets http://www.yyets.com/php/resource/11013 Fringe
-yyets http://www.yyets.com/php/resource/11037 Merlin
-yyets http://www.yyets.com/php/resource/11015 Supernatural
-yyets http://www.yyets.com/php/resource/11005 TBBT
-yyets http://www.yyets.com/php/resource/26779 Arrow
-yyets http://www.yyets.com/php/resource/11057 TheWalkingDead
-yyets http://www.yyets.com/php/resource/11007 Mentalist
-yyets http://www.yyets.com/php/resource/26195 Dexter
-yyets http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
-yyets http://www.yyets.com/php/resource/11176 Spartacus
-yyets http://www.yyets.com/php/resource/29083 NoCamera
-yyets http://www.yyets.com/php/resource/28793 HouseOfCards
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/10910 SuitsS02
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11013 Fringe
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11037 Merlin
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11015 Supernatural
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11005 TBBT
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/26779 Arrow
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11057 TheWalkingDead
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11007 Mentalist
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/26195 Dexter
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11176 Spartacus
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/28793 HouseOfCards
 
 # Below: not interesting any more
 
