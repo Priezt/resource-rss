@@ -52,6 +52,7 @@ yyets_rmvb_mp4 http://www.yyets.com/php/resource/26195 Dexter
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/11176 Spartacus
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/28793 HouseOfCards
+yyets http://www.yyets.com/php/resource/29134 NeoUltraQ
 
 # Below: not interesting any more
 
