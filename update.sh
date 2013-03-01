@@ -53,6 +53,9 @@ yyets_rmvb_mp4 http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/11176 Spartacus
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/28793 HouseOfCards
 yyets http://www.yyets.com/php/resource/29134 NeoUltraQ
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/11103 2BrokeGirls
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/28235 BlackMirror
+yyets http://www.yyets.com/php/resource/10452 Archer
 
 # Below: not interesting any more
 
