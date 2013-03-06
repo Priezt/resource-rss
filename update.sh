@@ -56,6 +56,7 @@ yyets http://www.yyets.com/php/resource/29134 NeoUltraQ
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/11103 2BrokeGirls
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/28235 BlackMirror
 yyets http://www.yyets.com/php/resource/10452 Archer
+yyets http://www.yyets.com/php/resource/29316 GreenLantern
 
 # Below: not interesting any more
 
