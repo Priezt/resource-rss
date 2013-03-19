@@ -33,8 +33,10 @@ echo YYETS
 #cat $YYETS_TEMP | grep -i 'Supernatural' | $FMR Supernatural
 #cat $YYETS_TEMP | grep -i 'Fringe' | $FMR Fringe
 
-yyets() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | $FMR $2 ; }
-yyets_rmvb_mp4() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | egrep -i 'rmvb|mp4' | $FMR $2 ; }
+#yyets() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | $FMR $2 ; }
+#yyets_rmvb_mp4() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | egrep -i 'rmvb|mp4' | $FMR $2 ; }
+yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
+yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/26753 AvengersS02
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/26745 Tron
@@ -57,6 +59,8 @@ yyets_rmvb_mp4 http://www.yyets.com/php/resource/11103 2BrokeGirls
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/28235 BlackMirror
 yyets http://www.yyets.com/php/resource/10452 Archer
 yyets http://www.yyets.com/php/resource/29316 GreenLantern
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/29311 Vikings
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/29326 Bible
 
 # Below: not interesting any more
 
