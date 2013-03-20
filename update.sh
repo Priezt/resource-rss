@@ -61,6 +61,7 @@ yyets http://www.yyets.com/php/resource/10452 Archer
 yyets http://www.yyets.com/php/resource/29316 GreenLantern
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/29311 Vikings
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/29326 Bible
+yyets_rmvb_mp4 http://www.yyets.com/php/resource/29452 InTheFlesh
 
 # Below: not interesting any more
 
