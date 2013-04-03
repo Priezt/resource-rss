@@ -61,10 +61,14 @@ yyets http://www.yyets.com/php/resource/10452 Archer
 yyets http://www.yyets.com/php/resource/29316 GreenLantern
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/29311 Vikings
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/29326 Bible
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/29452 InTheFlesh
+yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
+yyets_rmvb_mp4 http://www.yyets.com/resource/28404 DaVincisDemons
+
+pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
 # Below: not interesting any more
 
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/29452 InTheFlesh
 #yyets_rmvb http://www.yyets.com/php/resource/27156 666ParkAvenue
 #yyets http://www.yyets.com/php/resource/27274 BeautyAndTheBeast
 #yyets http://www.yyets.com/php/resource/11049 AmericanHorrorStory
@@ -102,5 +106,9 @@ get-rendered-url.js 'http://www.bilibili.tv/sp/JOJO%E7%9A%84%E5%A5%87%E5%A6%99%E
 curl -s 'http://www.ali213.net/zt/diablo3/gl/' | sed '1,/zhongjleft/d' | grep li | sed 's/.*<a/<a/' | sed 's/<'\\'/a>.*/<'\\'/a>/' | grep '<a' | grep 'class="b"' | iconv -f GB2312 -t UTF-8 | sed 's/.*href="//' | perl -ple 's/" class="b"[^>]*>/|/' | sed 's/<'\\'/a.*//' | $FMR Diablo3GongLue
 
 curl -s http://space.bilibili.tv/12276 | zcat | pq-rip.py -u -s http://space.bilibili.tv/12276 'a.title' | $FMR Zexal
+
+# 3DM
+
+pq-rip.py -u http://dl.3dmgame.com/ 'div.YiClist ul li p a' | $FMR 3DMDownload
 
 echo ======================================
