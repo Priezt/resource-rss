@@ -63,6 +63,7 @@ yyets_rmvb_mp4 http://www.yyets.com/php/resource/29311 Vikings
 yyets_rmvb_mp4 http://www.yyets.com/php/resource/29326 Bible
 yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
 yyets_rmvb_mp4 http://www.yyets.com/resource/28404 DaVincisDemons
+yyets_rmvb_mp4 http://www.yyets.com/resource/28764 Hannibal
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
