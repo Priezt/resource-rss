@@ -113,3 +113,8 @@ curl -s http://space.bilibili.tv/12276 | zcat | pq-rip.py -u -s http://space.bil
 pq-rip.py -u http://dl.3dmgame.com/ 'div.YiClist ul li p a' | $FMR 3DMDownload
 
 echo ======================================
+
+# Kindegarden
+
+pq-rip.py -u 'http://www.chneic.sh.cn/manager/news/more/more.asp?id=2' "table[width='745'] tr td a" | $FMR ChangNingEducation
+
