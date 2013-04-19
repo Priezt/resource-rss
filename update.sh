@@ -66,6 +66,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/28404 DaVincisDemons
 yyets_rmvb_mp4 http://www.yyets.com/resource/28764 Hannibal
 yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
 yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
+yyets http://www.yyets.com/resource/26326 DoctorWho
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
