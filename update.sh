@@ -47,6 +47,8 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
 yyets http://www.yyets.com/resource/26326 DoctorWho
 yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
 
+pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
+
 # comic
 pq-rip.py -u 'http://www.dm5.com/manhua-huofengliaoyuan/' '#cbc_1 > li > a' | grep -v javascript | $FMR HuoFeng
 pq-rip.py -u 'http://www.dm5.com/manhua-qizhayouxi/' '#cbc_1 > li > a' | grep -v javascript | $FMR LiarGame

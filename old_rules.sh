@@ -35,7 +35,6 @@ yyets http://www.yyets.com/php/resource/11049 AmericanHorrorStory
 yyets http://www.yyets.com/php/resource/11030 Boardwalk
 
 
-pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
 #yyets() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | $FMR $2 ; }
 #yyets_rmvb_mp4() { get-rendered-url.js $1 | pq-rip.py -u -s $1 'ul.resod_list li span.l a span.a' | egrep -i 'rmvb|mp4' | $FMR $2 ; }
