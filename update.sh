@@ -46,6 +46,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
 yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
 yyets http://www.yyets.com/resource/26326 DoctorWho
 yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
+yyets_rmvb_mp4 http://www.yyets.com/resource/26790 AngerManagement
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
