@@ -47,6 +47,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
 yyets http://www.yyets.com/resource/26326 DoctorWho
 yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
 yyets_rmvb_mp4 http://www.yyets.com/resource/26790 AngerManagement
+yyets_rmvb_mp4 http://www.yyets.com/resource/11112 TEN
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
@@ -80,5 +81,10 @@ pq-rip.py -u http://dl.3dmgame.com/ 'div.YiClist ul li p a' | $FMR 3DMDownload
 
 pq-rip.py -u 'http://www.chneic.sh.cn/manager/news/more/more.asp?id=2' "table[width='745'] tr td a" | $FMR ChangNingEducation
 pq-rip.py -u 'http://www.chneic.sh.cn/manager/news/more/more.asp?id=260' "table[width='745'] tr td a" | $FMR ChangNingEducationZhaoShen
+
+# Letv
+
+letv() { w3m -dump -cols 500  $1 | pcregrep '\s\d\d:\d\d\s*$' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
+letv http://so.letv.com/comic/88310.html Garo3
 
 echo ======================================
