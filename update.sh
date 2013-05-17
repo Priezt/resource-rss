@@ -44,7 +44,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/28404 DaVincisDemons
 yyets_rmvb_mp4 http://www.yyets.com/resource/28764 Hannibal
 yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
 yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
-yyets http://www.yyets.com/resource/26326 DoctorWho
+#yyets http://www.yyets.com/resource/26326 DoctorWho
 yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
 yyets_rmvb_mp4 http://www.yyets.com/resource/26790 AngerManagement
 yyets_rmvb_mp4 http://www.yyets.com/resource/11112 TEN
@@ -86,5 +86,9 @@ pq-rip.py -u 'http://www.chneic.sh.cn/manager/news/more/more.asp?id=260' "table[
 
 letv() { w3m -dump -cols 500  $1 | pcregrep '\s\d\d:\d\d\s*$' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 letv http://so.letv.com/comic/88310.html Garo3
+
+# FRTVS
+
+pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl.t_attachlist dt a[href*=attachpage]' | $FMR DoctorWhoS07
 
 echo ======================================
