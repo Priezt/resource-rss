@@ -91,4 +91,8 @@ letv http://so.letv.com/comic/88310.html Garo3
 
 pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl.t_attachlist dt a[href*=attachpage]' | $FMR DoctorWhoS07
 
+# 2tu.cc
+
+pq-rip.py -u http://www.2tu.cc/Html/GP15182.html 'div#main div.sections ul.pdown li a' | $FMR Garo3-2tu
+
 echo ======================================
