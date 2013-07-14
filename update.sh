@@ -47,7 +47,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
 #yyets http://www.yyets.com/resource/26326 DoctorWho
 yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
 yyets_rmvb_mp4 http://www.yyets.com/resource/26790 AngerManagement
-yyets_rmvb_mp4 http://www.yyets.com/resource/11112 TEN
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11112 TEN
 yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
 yyets_rmvb_mp4 http://www.yyets.com/resource/30025 UnderTheDome
 
