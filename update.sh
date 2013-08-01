@@ -52,6 +52,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
 yyets_rmvb_mp4 http://www.yyets.com/resource/30025 UnderTheDome
 yyets_rmvb_mp4 http://www.yyets.com/resource/30347 BewareTheBatman
 yyets_rmvb_mp4 http://www.yyets.com/resource/30369 Akuryo
+yyets_rmvb_mp4 http://www.yyets.com/resource/30438 SenzyoTanteiKageyama
 
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
