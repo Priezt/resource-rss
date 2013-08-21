@@ -54,6 +54,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30347 BewareTheBatman
 yyets_rmvb_mp4 http://www.yyets.com/resource/30369 Akuryo
 yyets_rmvb_mp4 http://www.yyets.com/resource/30438 SenzyoTanteiKageyama
 yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
+yyets_rmvb_mp4 http://www.yyets.com/resource/30283 HanzawaNao
 
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
