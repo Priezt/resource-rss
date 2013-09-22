@@ -7,6 +7,8 @@ echo PATH=$PATH
 WWW=$HOME/www/rss
 FMR=/home/priezt/code/resource-rss/fresh-make-rss.sh
 
+cd /home/priezt/code/resource-rss
+
 # yayaxz
 yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'class="type"' | perl -pe 's/.*?>//;s/<.*//;' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 
