@@ -58,6 +58,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30438 SenzyoTanteiKageyama
 yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
 yyets_rmvb_mp4 http://www.yyets.com/resource/30283 HanzawaNao
 yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
+yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
 
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
