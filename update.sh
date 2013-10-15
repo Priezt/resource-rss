@@ -61,6 +61,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
 yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
 yyets_rmvb_mp4 http://www.yyets.com/resource/30616 Atlantis
 yyets_rmvb_mp4 http://www.yyets.com/resource/30032 TheTomorrowPeople
+yyets_rmvb_mp4 http://www.yyets.com/resource/30883 Andoroido
 
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
