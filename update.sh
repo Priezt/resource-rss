@@ -62,6 +62,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
 yyets_rmvb_mp4 http://www.yyets.com/resource/30616 Atlantis
 yyets_rmvb_mp4 http://www.yyets.com/resource/30032 TheTomorrowPeople
 yyets_rmvb_mp4 http://www.yyets.com/resource/30883 Andoroido
+yyets_rmvb_mp4 http://www.yyets.com/resource/29984 Chosen
 
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
