@@ -18,45 +18,25 @@ yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'clas
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/26753 AvengersS02
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/26745 Tron
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/26737 UltimateSpiderMan
-yyets http://www.yyets.com/php/resource/29024 UltraQ
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/10910 SuitsS02
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11013 Fringe
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11037 Merlin
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11015 Supernatural
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11005 TBBT
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/26779 Arrow
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11057 TheWalkingDead
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11007 Mentalist
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/26195 Dexter
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/10990 TwoAndAHalfMen
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11176 Spartacus
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/28793 HouseOfCards
-yyets http://www.yyets.com/php/resource/29134 NeoUltraQ
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/11103 2BrokeGirls
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/28235 BlackMirror
-yyets http://www.yyets.com/php/resource/10452 Archer
-yyets http://www.yyets.com/php/resource/29316 GreenLantern
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/29311 Vikings
-yyets_rmvb_mp4 http://www.yyets.com/php/resource/29326 Bible
+yyets_rmvb_mp4 http://www.yyets.com/resource/26753 AvengersS02
+yyets_rmvb_mp4 http://www.yyets.com/resource/26745 Tron
+yyets_rmvb_mp4 http://www.yyets.com/resource/26737 UltimateSpiderMan
+yyets_rmvb_mp4 http://www.yyets.com/resource/11015 Supernatural
+yyets_rmvb_mp4 http://www.yyets.com/resource/11005 TBBT
+yyets_rmvb_mp4 http://www.yyets.com/resource/26779 Arrow
+yyets_rmvb_mp4 http://www.yyets.com/resource/11057 TheWalkingDead
+yyets_rmvb_mp4 http://www.yyets.com/resource/11007 Mentalist
+yyets_rmvb_mp4 http://www.yyets.com/resource/10990 TwoAndAHalfMen
+yyets_rmvb_mp4 http://www.yyets.com/resource/28793 HouseOfCards
+yyets_rmvb_mp4 http://www.yyets.com/resource/11103 2BrokeGirls
+yyets_rmvb_mp4 http://www.yyets.com/resource/28235 BlackMirror
+yyets_rmvb_mp4 http://www.yyets.com/resource/10452 Archer
 yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
-yyets_rmvb_mp4 http://www.yyets.com/resource/28404 DaVincisDemons
-yyets_rmvb_mp4 http://www.yyets.com/resource/28764 Hannibal
 yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
-yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
-#yyets http://www.yyets.com/resource/26326 DoctorWho
-yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
 yyets_rmvb_mp4 http://www.yyets.com/resource/26790 AngerManagement
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11112 TEN
 yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
-yyets_rmvb_mp4 http://www.yyets.com/resource/30025 UnderTheDome
 yyets_rmvb_mp4 http://www.yyets.com/resource/30347 BewareTheBatman
-yyets_rmvb_mp4 http://www.yyets.com/resource/30369 Akuryo
-yyets_rmvb_mp4 http://www.yyets.com/resource/30438 SenzyoTanteiKageyama
 yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
-yyets_rmvb_mp4 http://www.yyets.com/resource/30283 HanzawaNao
 yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
 yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
 yyets_rmvb_mp4 http://www.yyets.com/resource/30616 Atlantis
@@ -64,6 +44,31 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30032 TheTomorrowPeople
 yyets_rmvb_mp4 http://www.yyets.com/resource/30883 Andoroido
 yyets_rmvb_mp4 http://www.yyets.com/resource/29984 Chosen
 
+yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
+yayaxz http://www.yayaxz.com/resource/26745 yayaTron
+yayaxz http://www.yayaxz.com/resource/26737 yayaUltimateSpiderMan
+yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
+yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
+yayaxz http://www.yayaxz.com/resource/26779 yayaArrow
+yayaxz http://www.yayaxz.com/resource/11057 yayaTheWalkingDead
+yayaxz http://www.yayaxz.com/resource/11007 yayaMentalist
+yayaxz http://www.yayaxz.com/resource/10990 yayaTwoAndAHalfMen
+yayaxz http://www.yayaxz.com/resource/28793 yayaHouseOfCards
+yayaxz http://www.yayaxz.com/resource/11103 yaya2BrokeGirls
+yayaxz http://www.yayaxz.com/resource/28235 yayaBlackMirror
+yayaxz http://www.yayaxz.com/resource/10452 yayaArcher
+yayaxz http://www.yayaxz.com/resource/10733 yayaGameOfThrones
+yayaxz http://www.yayaxz.com/resource/29725 yayaGalileo
+yayaxz http://www.yayaxz.com/resource/26790 yayaAngerManagement
+yayaxz http://www.yayaxz.com/resource/30010 yayaAvengersAssemble
+yayaxz http://www.yayaxz.com/resource/30347 yayaBewareTheBatman
+yayaxz http://www.yayaxz.com/resource/30509 yayaHulkAndTheAgentsOfSmash
+yayaxz http://www.yayaxz.com/resource/30330 yayaSleepyHollow
+yayaxz http://www.yayaxz.com/resource/30675 yayaSHIELD
+yayaxz http://www.yayaxz.com/resource/30616 yayaAtlantis
+yayaxz http://www.yayaxz.com/resource/30032 yayaTheTomorrowPeople
+yayaxz http://www.yayaxz.com/resource/30883 yayaAndoroido
+yayaxz http://www.yayaxz.com/resource/29984 yayaChosen
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 

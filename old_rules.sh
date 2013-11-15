@@ -47,3 +47,24 @@ pq-rip.py -u 'http://www.dm5.com/manhua-qizhayouxi/' '#cbc_1 > li > a' | grep -v
 pq-rip.py -u 'http://www.dm5.com/manhua-jinjidejuren/' '#cbc_1 > li > a' | grep -v javascript | $FMR Giant
 pq-rip.py -u 'http://www.dm5.com/manhua-jojo-qimiaomaoxiandi-08-bu/' '#cbc_1 > li > a' | grep -v javascript | $FMR JoJo8
 pq-rip.py -u 'http://www.dm5.com/manhua-fengshenji-2/' '#cbc_1 > li > a' | grep -v javascript | $FMR FengShenJi2
+
+#yyets http://www.yyets.com/php/resource/29316 GreenLantern
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/29311 Vikings
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/29326 Bible
+#yyets_rmvb_mp4 http://www.yyets.com/resource/28404 DaVincisDemons
+#yyets_rmvb_mp4 http://www.yyets.com/resource/28764 Hannibal
+#yyets_rmvb_mp4 http://www.yyets.com/resource/29676 Defiance
+#yyets http://www.yyets.com/resource/26326 DoctorWho
+#yyets_rmvb_mp4 http://www.yyets.com/resource/29752 MinnaEsupaDayo
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11112 TEN
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30025 UnderTheDome
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30438 SenzyoTanteiKageyama
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30283 HanzawaNao
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30369 Akuryo
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/11176 Spartacus
+#yyets http://www.yyets.com/php/resource/29134 NeoUltraQ
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/26195 Dexter
+#yyets http://www.yyets.com/php/resource/29024 UltraQ
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/10910 SuitsS02
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/11013 Fringe
+#yyets_rmvb_mp4 http://www.yyets.com/php/resource/11037 Merlin
