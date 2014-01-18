@@ -48,6 +48,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/30227 AlmostHuman
 yyets_rmvb_mp4 http://www.yyets.com/resource/11049 AmericanHorrorStory
 yyets_rmvb_mp4 http://www.yyets.com/resource/11133 Sherlock
 yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
+yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
 
 #yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
 #yayaxz http://www.yayaxz.com/resource/26745 yayaTron
