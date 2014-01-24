@@ -134,4 +134,8 @@ tucc http://www.2tu.cc/Html/GP15182.html Garo3-2tu
 
 pq-rip.py -u http://www.verycd.com/theater 'ul.cf li' | $FMR YinXun
 
+# playno1
+
+./rip-playno1.rb | $FMR Playno1
+
 echo ======================================

@@ -5,5 +5,5 @@ require 'nokogiri'
 
 page = Nokogiri::HTML(open('http://www.playno1.com/portal.php?mod=list&catid=4'))
 page.css("div.fire_float h3 a").each do |a|
-	puts "#{a.text}|http://www.playno1.com/#{a.attr("href")}"
+	puts "http://www.playno1.com/#{a.attr("href")}|#{a.text}"
 end
