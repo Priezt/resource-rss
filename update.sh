@@ -138,4 +138,8 @@ pq-rip.py -u http://www.verycd.com/theater 'ul.cf li' | $FMR YinXun
 
 ./rip-playno1.rb | $FMR Playno1
 
+# dwango
+ng-rip.rb 'http://pc.dwango.jp/rankings/single/monthly' '#ranking table td div.rightname' | $FMR JPOP
+ng-rip.rb 'http://pc.dwango.jp/rankings/single/monthly/genre:kpop' '#ranking table td div.rightname' | $FMR KPOP
+
 echo ======================================
