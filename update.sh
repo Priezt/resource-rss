@@ -51,6 +51,8 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
 yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
 yyets_rmvb_mp4 http://www.yyets.com/resource/31530 Musketeers
 yyets_rmvb_mp4 http://www.yyets.com/resource/31790 MindGames
+yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
+yyets_rmvb_mp4 http://www.yyets.com/resource/31998 DiskWars
 
 #yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
 #yayaxz http://www.yayaxz.com/resource/26745 yayaTron
