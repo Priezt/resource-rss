@@ -105,6 +105,8 @@ curl -s http://www.bilibili.tv/sppage/bangumi-16497-1.html | sed '1i\\n' | sed '
 
 curl -s http://bilibili.kankanews.com/sppage/bangumi-6634-893-1.html | sed '1i\\n' | sed '1r utf8-header.html' | pq-rip.py -u -s http://bilibili.kankanews.com/sppage/bangumi-6634-893-1.html 'a' | perl -pe '$_="http://www.bilibili.tv".$_' | $FMR JoJo3Anime
 
+curl -s http://bilibili.kankanews.com/sppage/bangumi-5636-901-1.html | sed '1i\\n' | sed '1r utf8-header.html' | pq-rip.py -u -s http://bilibili.kankanews.com/sppage/bangumi-5636-901-1.html 'a' | perl -pe '$_="http://www.bilibili.tv".$_' | $FMR ARCV
+
 # Diablo3 GongLue
 curl -s 'http://www.ali213.net/zt/diablo3/gl/' | sed '1,/zhongjleft/d' | grep li | sed 's/.*<a/<a/' | sed 's/<'\\'/a>.*/<'\\'/a>/' | grep '<a' | grep 'class="b"' | iconv -f GB2312 -t UTF-8 | sed 's/.*href="//' | perl -ple 's/" class="b"[^>]*>/|/' | sed 's/<'\\'/a.*//' | $FMR Diablo3GongLue
 
