@@ -11,6 +11,9 @@ cd /home/priezt/code/resource-rss
 
 # yayaxz
 yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'class="type"' | perl -pe 's/.*?>//;s/<.*//;' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
+yayaxz() { ng-rip.rb $1 'dd.resource-item > a:not([class])' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
+
+yayaxz http://www.yayaxz.com/resource/31631 PennyDreadful
 
 #yayaxz http://www.yayaxz.com/resource/10733 GameOfThrones
 
