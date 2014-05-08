@@ -152,6 +152,7 @@ tucc() { pq-rip.py $1 'div#main div.sections ul.pdown li a' | perl -pe '$_ = "'$
 tucc2() { curl -s $1 | grep 'var GvodUrls' | sed 's/.* "//' | sed 's/".*//' | iconv -f GBK -t UTF-8 | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 
 tucc2 http://www.2tu.cc/Html/GP18313.html Garo4
+tucc2 http://www.2tu.cc/Html/GP18384.html JiDongJingCha
 
 # yinxun
 
