@@ -170,5 +170,7 @@ ng-rip.rb 'http://pc.dwango.jp/rankings/single/monthly/genre:kpop' '#ranking tab
 
 ng-rip.rb http://www.hearthstone.com.cn/home 'a.homeNewsItem' | $FMR HearthStoneBNNews
 
+ng-rip.rb -u http://h.163.com/ <(curl -s http://h.163.com/ | iconv -f GBK -t UTF-8) '#hotlist h2.blog-title a' | $FMR HearthStone163News
+
 date
 echo ======================================
