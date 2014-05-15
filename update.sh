@@ -94,7 +94,8 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/32018 Salem
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
 # movie
-pq-rip.py -u 'http://www.piaohua.com' 'a > strong > font' | $FMR PiaoHua
+#pq-rip.py -u 'http://www.piaohua.com' 'a > strong > font' | $FMR PiaoHua
+j.rip http://www.piaohua.com/ 'div#im li' 'strong' | ./jrrs.sh PiaoHua
 
 # tudou
 
