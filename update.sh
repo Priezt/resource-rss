@@ -20,6 +20,7 @@ yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'clas
 yayaxz() { ng-rip.rb $1 'dd.resource-item > a:not([class])' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 
 yayaxz http://www.yayaxz.com/resource/31631 PennyDreadful
+yayaxz http://www.yayaxz.com/resource/31801 SiliconValley
 
 #yayaxz http://www.yayaxz.com/resource/10733 GameOfThrones
 
@@ -60,7 +61,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
 yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
 yyets_rmvb_mp4 http://www.yyets.com/resource/31530 Musketeers
 yyets_rmvb_mp4 http://www.yyets.com/resource/31790 MindGames
-yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
+#yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
 yyets_rmvb_mp4 http://www.yyets.com/resource/31998 DiskWars
 yyets_rmvb_mp4 http://www.yyets.com/resource/32018 Salem
 
