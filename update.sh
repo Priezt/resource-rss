@@ -104,8 +104,8 @@ curl -s http://www.tudou.com/albumcover/tu2_3AhegUY.html | iconv -f GBK -t UTF-8
 
 # youku
 
-pq-rip.py -u 'http://www.youku.com/show_page/id_z02baa1f0cbcf11e19013.html' 'div#episode ul li a' | $FMR 10000ColdJokes
-pq-rip.py -u 'http://www.youku.com/show_page/id_zd1d065eafb1411e2a705.html' 'div#episode ul li a' | $FMR WanWanMeiXiangDao
+#pq-rip.py -u 'http://www.youku.com/show_page/id_z02baa1f0cbcf11e19013.html' 'div#episode ul li a' | $FMR 10000ColdJokes
+#pq-rip.py -u 'http://www.youku.com/show_page/id_zd1d065eafb1411e2a705.html' 'div#episode ul li a' | $FMR WanWanMeiXiangDao
 
 #./rip-youku-playlist.rb http://www.youku.com/playlist_show/id_20034870.html | $FMR MeiWanYiGeGuiGuShi
 
