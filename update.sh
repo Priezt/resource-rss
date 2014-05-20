@@ -151,7 +151,7 @@ pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl
 tucc() { pq-rip.py $1 'div#main div.sections ul.pdown li a' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 #tucc http://www.2tu.cc/Html/GP15182.html Garo3-2tu
 
-tucc2() { curl -s $1 | grep 'var GvodUrls' | sed 's/.* "//' | sed 's/".*//' | iconv -f GBK -t UTF-8 | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
+tucc2() { curl -s $1 | grep 'var GvodUrls' | sed 's/.* "//' | sed 's/".*//' | iconv -f GBK -t UTF-8 | tr '#' '\n' | grep ':' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 
 tucc2 http://www.2tu.cc/Html/GP18313.html Garo4
 tucc2 http://www.2tu.cc/Html/GP18384.html JiDongJingCha
