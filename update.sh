@@ -181,5 +181,7 @@ j.rip 'http://dv.56.com/funny/?do=review' 'div.review_list li' 'div.vid_info' | 
 
 j.rip http://bt.ktxp.com/team-222-1.html 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh KRL
 
+j.rip http://www.chinaocg.cn/ 'div.items' 'a' | ./jrrs.sh CHINAOCG
+
 date
 echo ======================================
