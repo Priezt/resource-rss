@@ -1,5 +1,6 @@
 #!/bin/bash --login
 
+date
 echo "Get all threads"
 ./get-threads.sh
 echo "Filter new threads"
