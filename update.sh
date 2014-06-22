@@ -66,6 +66,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/31790 MindGames
 yyets_rmvb_mp4 http://www.yyets.com/resource/31998 DiskWars
 yyets_rmvb_mp4 http://www.yyets.com/resource/32018 Salem
 yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
+yyets_rmvb_mp4 http://www.yyets.com/resource/32281 Dominion
 
 #yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
 #yayaxz http://www.yayaxz.com/resource/26745 yayaTron
