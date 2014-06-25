@@ -16,6 +16,8 @@ tieba(){ curl -s $1 | tr '<' '\n' | grep j_th_tit | grep href | grep ^a | grep /
 #tieba http://tieba.baidu.com/f?kw=%C2%AF%CA%AF%B4%AB%CB%B5 HearthStoneTieba
 tieba http://tieba.baidu.com/f/good?kw=%C2%AF%CA%AF%B4%AB%CB%B5 HearthStoneTieba
 
+tieba http://tieba.baidu.com/f/good?kw=%BF%D6%B2%C0%C6%AC KongBuPianTieba
+
 # yayaxz
 yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'class="type"' | perl -pe 's/.*?>//;s/<.*//;' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 yayaxz() { ng-rip.rb $1 'dd.resource-item > a:not([class])' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
