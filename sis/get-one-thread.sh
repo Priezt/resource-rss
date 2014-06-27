@@ -38,11 +38,13 @@ for my $img (@images){
 
 open HTML,">",$path."/index.html";
 print HTML "<div class=\"thread\">\n";
+print HTML "<div class=\"close\">Close</div>";
 print HTML $description."<br>\n";
 for my $img (@img_filenames){
 	print HTML "<img src=\"threads/$id/$img\"><br>\n";
 }
 print HTML "<h1><a href=\"threads/$id/seed.torrent\">Torrent</a><br>\n</h1>";
-print HTML "</div>\n";
+print HTML "<div class=\"close\">Close</div>";
 print HTML "<hr>\n";
+print HTML "</div>\n";
 close HTML;
