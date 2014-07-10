@@ -187,6 +187,8 @@ j.rip http://bt.ktxp.com/team-222-1.html 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrr
 
 j.rip 'http://bt.ktxp.com/search.php?keyword=JOJO%E5%A5%87%E5%A6%99%E5%86%92%E9%99%A9%E5%90%A7' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh JoJo3KTXP
 
+j.rip 'http://bt.ktxp.com/search.php?keyword=%E6%B8%B8%E6%88%8F%E7%8E%8B' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh YuGiOh_ARCV_KTXP
+
 j.rip http://www.chinaocg.cn/ 'div.items' 'a' | ./jrrs.sh CHINAOCG
 
 date
