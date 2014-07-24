@@ -31,6 +31,7 @@ yayaxz http://www.yayaxz.com/resource/31801 SiliconValley
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
+yyets_rmvb_mp4 http://www.yyets.com/resource/32513 KindaichiN
 yyets_rmvb_mp4 http://www.yyets.com/resource/26753 AvengersS02
 yyets_rmvb_mp4 http://www.yyets.com/resource/26745 Tron
 yyets_rmvb_mp4 http://www.yyets.com/resource/26737 UltimateSpiderMan
