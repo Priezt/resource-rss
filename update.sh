@@ -108,6 +108,10 @@ pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 #pq-rip.py -u 'http://www.piaohua.com' 'a > strong > font' | $FMR PiaoHua
 j.rip http://www.piaohua.com/ 'div#im li' 'strong' | ./jrrs.sh PiaoHua
 
+# iqiyi
+
+j.rip http://www.iqiyi.com/a_19rrhbkchh.html '#j-pagelist-content ul li' 'p a' | ./jrrs.sh HuaJiangHu
+
 # tudou
 
 curl -s http://www.tudou.com/albumcover/tu2_3AhegUY.html | iconv -f GBK -t UTF-8 | grep -i albumplay | grep target | grep -v '></a' | sed '1,3d' | sed 's/^.*" href="//' | sed 's/"./\|/' | sed 's/<\/a>.*$//' | $FMR Gintama
