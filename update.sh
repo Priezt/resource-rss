@@ -75,6 +75,7 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/32264 Constantine
 yyets_rmvb_mp4 http://www.yyets.com/resource/32143 Extant
 yyets_rmvb_mp4 http://www.yyets.com/resource/32102 TheStrain
 yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
+yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
 
 #yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
 #yayaxz http://www.yayaxz.com/resource/26745 yayaTron
