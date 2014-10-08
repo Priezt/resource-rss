@@ -14,9 +14,9 @@ cd /home/priezt/code/resource-rss
 tieba(){ curl -s $1 | tr '<' '\n' | grep j_th_tit | grep href | grep ^a | grep /p/ | sed 's/.*href="/http:\/\/tieba.baidu.com/' | perl -pe 's/".*>/\|/' | iconv -f GBK -t UTF-8 | $FMR $2; }
 
 #tieba http://tieba.baidu.com/f?kw=%C2%AF%CA%AF%B4%AB%CB%B5 HearthStoneTieba
-tieba http://tieba.baidu.com/f/good?kw=%C2%AF%CA%AF%B4%AB%CB%B5 HearthStoneTieba
+tieba 'http://tieba.baidu.com/f/good?kw=%C2%AF%CA%AF%B4%AB%CB%B5' HearthStoneTieba
 
-tieba http://tieba.baidu.com/f/good?kw=%BF%D6%B2%C0%C6%AC KongBuPianTieba
+tieba 'http://tieba.baidu.com/f/good?kw=%BF%D6%B2%C0%C6%AC' KongBuPianTieba
 
 # yayaxz
 yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'class="type"' | perl -pe 's/.*?>//;s/<.*//;' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
