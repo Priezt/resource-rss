@@ -204,5 +204,9 @@ j.rip 'http://bt.ktxp.com/search.php?keyword=%E7%81%AB%E6%98%9F%E5%BC%82%E7%A7%8
 
 j.rip http://www.chinaocg.cn/ 'div.items' 'a' | ./jrrs.sh CHINAOCG
 
+j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.article ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookFiction
+
+j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.aside ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookReal
+
 date
 echo ======================================
