@@ -22,8 +22,8 @@ tieba 'http://tieba.baidu.com/f/good?kw=%BF%D6%B2%C0%C6%AC' KongBuPianTieba
 yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'class="type"' | perl -pe 's/.*?>//;s/<.*//;' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 yayaxz() { ng-rip.rb $1 'dd.resource-item > a:not([class])' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 
-yayaxz http://www.yayaxz.com/resource/31631 PennyDreadful
-yayaxz http://www.yayaxz.com/resource/31801 SiliconValley
+#yayaxz http://www.yayaxz.com/resource/31631 PennyDreadful
+#yayaxz http://www.yayaxz.com/resource/31801 SiliconValley
 
 #yayaxz http://www.yayaxz.com/resource/10733 GameOfThrones
 
@@ -31,8 +31,6 @@ yayaxz http://www.yayaxz.com/resource/31801 SiliconValley
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-yyets_rmvb_mp4 http://www.yyets.com/resource/32513 KindaichiN
-yyets_rmvb_mp4 http://www.yyets.com/resource/26753 AvengersS02
 yyets_rmvb_mp4 http://www.yyets.com/resource/26745 Tron
 yyets_rmvb_mp4 http://www.yyets.com/resource/26737 UltimateSpiderMan
 yyets_rmvb_mp4 http://www.yyets.com/resource/11015 Supernatural
@@ -41,34 +39,21 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/26779 Arrow
 yyets_rmvb_mp4 http://www.yyets.com/resource/11057 TheWalkingDead
 yyets_rmvb_mp4 http://www.yyets.com/resource/11007 Mentalist
 yyets_rmvb_mp4 http://www.yyets.com/resource/10990 TwoAndAHalfMen
-yyets_rmvb_mp4 http://www.yyets.com/resource/28793 HouseOfCards
-yyets_rmvb_mp4 http://www.yyets.com/resource/11103 2BrokeGirls
 yyets_rmvb_mp4 http://www.yyets.com/resource/28235 BlackMirror
-yyets_rmvb_mp4 http://www.yyets.com/resource/10452 Archer
 yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
 yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
-yyets_rmvb_mp4 http://www.yyets.com/resource/26790 AngerManagement
 yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
 yyets_rmvb_mp4 http://www.yyets.com/resource/30347 BewareTheBatman
 yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
 yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
 yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
-yyets_rmvb_mp4 http://www.yyets.com/resource/30616 Atlantis
-yyets_rmvb_mp4 http://www.yyets.com/resource/30032 TheTomorrowPeople
-yyets_rmvb_mp4 http://www.yyets.com/resource/30883 Andoroido
-yyets_rmvb_mp4 http://www.yyets.com/resource/29984 Chosen
-yyets_rmvb_mp4 http://www.yyets.com/resource/29964 Blacklist
 yyets_rmvb_mp4 http://www.yyets.com/resource/30227 AlmostHuman
 yyets_rmvb_mp4 http://www.yyets.com/resource/11049 AmericanHorrorStory
 yyets_rmvb_mp4 http://www.yyets.com/resource/11133 Sherlock
 yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
 yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
-yyets_rmvb_mp4 http://www.yyets.com/resource/31530 Musketeers
-yyets_rmvb_mp4 http://www.yyets.com/resource/31790 MindGames
 yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
 yyets_rmvb_mp4 http://www.yyets.com/resource/31998 DiskWars
-yyets_rmvb_mp4 http://www.yyets.com/resource/32018 Salem
-yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
 yyets_rmvb_mp4 http://www.yyets.com/resource/32281 Dominion
 yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
 yyets_rmvb_mp4 http://www.yyets.com/resource/32264 Constantine
@@ -165,20 +150,11 @@ pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl
 # 2tu.cc
 
 tucc() { pq-rip.py $1 'div#main div.sections ul.pdown li a' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
-#tucc http://www.2tu.cc/Html/GP15182.html Garo3-2tu
 
-tucc2() { curl -s $1 | grep 'var GvodUrls' | sed 's/.* "//' | sed 's/".*//' | iconv -f GBK -t UTF-8 | tr '#' '\n' | grep ':' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
-
-tucc2 http://www.2tu.cc/Html/GP18313.html Garo4
-tucc2 http://www.2tu.cc/Html/GP18384.html JiDongJingCha
 
 # yinxun
 
 pq-rip.py -u http://www.verycd.com/theater 'ul.cf li' | $FMR YinXun
-
-# playno1
-
-./rip-playno1.rb | $FMR Playno1
 
 # dwango
 ng-rip.rb 'http://pc.dwango.jp/rankings/single/monthly' '#ranking table td div.rightname' | $FMR JPOP
@@ -201,6 +177,8 @@ j.rip 'http://bt.ktxp.com/search.php?keyword=JOJO%E5%A5%87%E5%A6%99%E5%86%92%E9%
 j.rip 'http://bt.ktxp.com/search.php?keyword=%E6%B8%B8%E6%88%8F%E7%8E%8B' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh YuGiOh_ARCV_KTXP
 
 j.rip 'http://bt.ktxp.com/search.php?keyword=%E7%81%AB%E6%98%9F%E5%BC%82%E7%A7%8D' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh TerraFormars_KTXP
+
+j.rip 'http://bt.ktxp.com/search.php?keyword=%E5%AF%84%E7%94%9F%E5%85%BD' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh Kiseijuu_KTXP
 
 j.rip http://www.chinaocg.cn/ 'div.items' 'a' | ./jrrs.sh CHINAOCG
 
