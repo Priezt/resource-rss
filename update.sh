@@ -97,7 +97,8 @@ j.rip http://www.piaohua.com/ 'div#im li' 'strong' | ./jrrs.sh PiaoHua
 
 # iqiyi
 
-j.rip http://www.iqiyi.com/a_19rrhbkchh.html '#j-pagelist-content ul li' 'p a' | ./jrrs.sh HuaJiangHu
+#j.rip http://www.iqiyi.com/a_19rrhbkchh.html '#j-pagelist-content ul li' 'p a' | ./jrrs.sh HuaJiangHu
+j.rip http://www.iqiyi.com/a_19rrhbkchh.html 'div.mod_album_lists ul li.album_item'| ./jrrs.sh HuaJiangHu
 
 # tudou
 
