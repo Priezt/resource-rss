@@ -187,5 +187,7 @@ j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.article ul l
 
 j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.aside ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookReal
 
+j.rip 'http://kr.hujiang.com/new/tag/%E9%9F%A9%E8%AF%AD%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/' 'ul#article_list li' 'a.a_article_title' | ./jrrs.sh KoreanMeiRiYiJu
+
 date
 echo ======================================
