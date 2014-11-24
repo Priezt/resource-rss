@@ -20,48 +20,65 @@ tieba 'http://tieba.baidu.com/f/good?kw=%C2%AF%CA%AF%B4%AB%CB%B5' HearthStoneTie
 tieba 'http://tieba.baidu.com/f/good?kw=%BF%D6%B2%C0%C6%AC' KongBuPianTieba
 
 # yayaxz
-yayaxz() { curl -s $1 | grep -A 5 resource-item | grep '<a href' | grep -v 'class="type"' | perl -pe 's/.*?>//;s/<.*//;' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
-yayaxz() { ng-rip.rb $1 'dd.resource-item > a:not([class])' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
+yayaxz() { curl -s $1 | grep -A 5 resource-item | grep -v 'class="type"' | grep -A 1 '<a href' | grep -v '<a href' | grep '\.' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
+#yayaxz() { ng-rip.rb $1 'dd.resource-item > a:not([class])' | perl -pe '$_ = "'$1'|".$_' | $FMR $2; }
 
-#yayaxz http://www.yayaxz.com/resource/31631 PennyDreadful
-#yayaxz http://www.yayaxz.com/resource/31801 SiliconValley
-
-#yayaxz http://www.yayaxz.com/resource/10733 GameOfThrones
 
 # yyets
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-yyets_rmvb_mp4 http://www.yyets.com/resource/26745 Tron
-yyets_rmvb_mp4 http://www.yyets.com/resource/26737 UltimateSpiderMan
-yyets_rmvb_mp4 http://www.yyets.com/resource/11015 Supernatural
-yyets_rmvb_mp4 http://www.yyets.com/resource/11005 TBBT
-yyets_rmvb_mp4 http://www.yyets.com/resource/26779 Arrow
-yyets_rmvb_mp4 http://www.yyets.com/resource/11057 TheWalkingDead
-yyets_rmvb_mp4 http://www.yyets.com/resource/11007 Mentalist
-yyets_rmvb_mp4 http://www.yyets.com/resource/10990 TwoAndAHalfMen
-yyets_rmvb_mp4 http://www.yyets.com/resource/28235 BlackMirror
-yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
-yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
-yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
-yyets_rmvb_mp4 http://www.yyets.com/resource/30347 BewareTheBatman
-yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
-yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
-yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
-yyets_rmvb_mp4 http://www.yyets.com/resource/30227 AlmostHuman
-yyets_rmvb_mp4 http://www.yyets.com/resource/11049 AmericanHorrorStory
-yyets_rmvb_mp4 http://www.yyets.com/resource/11133 Sherlock
-yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
-yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
-yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
-yyets_rmvb_mp4 http://www.yyets.com/resource/31998 DiskWars
-yyets_rmvb_mp4 http://www.yyets.com/resource/32281 Dominion
-yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
-yyets_rmvb_mp4 http://www.yyets.com/resource/32264 Constantine
-yyets_rmvb_mp4 http://www.yyets.com/resource/32143 Extant
-yyets_rmvb_mp4 http://www.yyets.com/resource/32102 TheStrain
-yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
-yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11015 Supernatural
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11005 TBBT
+#yyets_rmvb_mp4 http://www.yyets.com/resource/26779 Arrow
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11057 TheWalkingDead
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11007 Mentalist
+#yyets_rmvb_mp4 http://www.yyets.com/resource/10990 TwoAndAHalfMen
+#yyets_rmvb_mp4 http://www.yyets.com/resource/28235 BlackMirror
+#yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
+#yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
+#yyets_rmvb_mp4 http://www.yyets.com/resource/30227 AlmostHuman
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11049 AmericanHorrorStory
+#yyets_rmvb_mp4 http://www.yyets.com/resource/11133 Sherlock
+#yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
+#yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
+#yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
+#yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
+#yyets_rmvb_mp4 http://www.yyets.com/resource/32264 Constantine
+#yyets_rmvb_mp4 http://www.yyets.com/resource/32143 Extant
+#yyets_rmvb_mp4 http://www.yyets.com/resource/32102 TheStrain
+#yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
+#yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
+
+yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
+yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
+yayaxz http://www.yayaxz.com/resource/26779 yayaArrow
+yayaxz http://www.yayaxz.com/resource/11057 yayaTheWalkingDead
+yayaxz http://www.yayaxz.com/resource/11007 yayaMentalist
+yayaxz http://www.yayaxz.com/resource/10990 yayaTwoAndAHalfMen
+yayaxz http://www.yayaxz.com/resource/28235 yayaBlackMirror
+yayaxz http://www.yayaxz.com/resource/10733 yayaGameOfThrones
+yayaxz http://www.yayaxz.com/resource/29725 yayaGalileo
+yayaxz http://www.yayaxz.com/resource/30010 yayaAvengersAssemble
+yayaxz http://www.yayaxz.com/resource/30509 yayaHulkAndTheAgentsOfSmash
+yayaxz http://www.yayaxz.com/resource/30330 yayaSleepyHollow
+yayaxz http://www.yayaxz.com/resource/30675 yayaSHIELD
+yayaxz http://www.yayaxz.com/resource/30227 yayaAlmostHuman
+yayaxz http://www.yayaxz.com/resource/11049 yayaAmericanHorrorStory
+yayaxz http://www.yayaxz.com/resource/11133 yayaSherlock
+yayaxz http://www.yayaxz.com/resource/31088 yayaHelix
+yayaxz http://www.yayaxz.com/resource/10682 yayaUshijimakun
+yayaxz http://www.yayaxz.com/resource/31801 yayaSiliconValley
+yayaxz http://www.yayaxz.com/resource/32235 yayaTheFlash
+yayaxz http://www.yayaxz.com/resource/32264 yayaConstantine
+yayaxz http://www.yayaxz.com/resource/32143 yayaExtant
+yayaxz http://www.yayaxz.com/resource/32102 yayaTheStrain
+yayaxz http://www.yayaxz.com/resource/26326 yayaDoctorWho
+yayaxz http://www.yayaxz.com/resource/32725 yayaZNation
 
 #yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
 #yayaxz http://www.yayaxz.com/resource/26745 yayaTron
