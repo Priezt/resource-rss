@@ -28,31 +28,31 @@ yayaxz() { curl -s $1 | grep -A 5 resource-item | grep -v 'class="type"' | grep 
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11015 Supernatural
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11005 TBBT
-#yyets_rmvb_mp4 http://www.yyets.com/resource/26779 Arrow
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11057 TheWalkingDead
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11007 Mentalist
-#yyets_rmvb_mp4 http://www.yyets.com/resource/10990 TwoAndAHalfMen
-#yyets_rmvb_mp4 http://www.yyets.com/resource/28235 BlackMirror
-#yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
-#yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
-#yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
-#yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
-#yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
-#yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
-#yyets_rmvb_mp4 http://www.yyets.com/resource/30227 AlmostHuman
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11049 AmericanHorrorStory
-#yyets_rmvb_mp4 http://www.yyets.com/resource/11133 Sherlock
-#yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
-#yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
-#yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
-#yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
-#yyets_rmvb_mp4 http://www.yyets.com/resource/32264 Constantine
-#yyets_rmvb_mp4 http://www.yyets.com/resource/32143 Extant
-#yyets_rmvb_mp4 http://www.yyets.com/resource/32102 TheStrain
-#yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
-#yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
+yyets_rmvb_mp4 http://www.yyets.com/resource/11015 Supernatural
+yyets_rmvb_mp4 http://www.yyets.com/resource/11005 TBBT
+yyets_rmvb_mp4 http://www.yyets.com/resource/26779 Arrow
+yyets_rmvb_mp4 http://www.yyets.com/resource/11057 TheWalkingDead
+yyets_rmvb_mp4 http://www.yyets.com/resource/11007 Mentalist
+yyets_rmvb_mp4 http://www.yyets.com/resource/10990 TwoAndAHalfMen
+yyets_rmvb_mp4 http://www.yyets.com/resource/28235 BlackMirror
+yyets_rmvb_mp4 http://www.yyets.com/resource/10733 GameOfThrones
+yyets_rmvb_mp4 http://www.yyets.com/resource/29725 Galileo
+yyets_rmvb_mp4 http://www.yyets.com/resource/30010 AvengersAssemble
+yyets_rmvb_mp4 http://www.yyets.com/resource/30509 HulkAndTheAgentsOfSmash
+yyets_rmvb_mp4 http://www.yyets.com/resource/30330 SleepyHollow
+yyets_rmvb_mp4 http://www.yyets.com/resource/30675 SHIELD
+yyets_rmvb_mp4 http://www.yyets.com/resource/30227 AlmostHuman
+yyets_rmvb_mp4 http://www.yyets.com/resource/11049 AmericanHorrorStory
+yyets_rmvb_mp4 http://www.yyets.com/resource/11133 Sherlock
+yyets_rmvb_mp4 http://www.yyets.com/resource/31088 Helix
+yyets_rmvb_mp4 http://www.yyets.com/resource/10682 Ushijimakun
+yyets_rmvb_mp4 http://www.yyets.com/resource/31801 SiliconValley
+yyets_rmvb_mp4 http://www.yyets.com/resource/32235 TheFlash
+yyets_rmvb_mp4 http://www.yyets.com/resource/32264 Constantine
+yyets_rmvb_mp4 http://www.yyets.com/resource/32143 Extant
+yyets_rmvb_mp4 http://www.yyets.com/resource/32102 TheStrain
+yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
+yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
 
 yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
 yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
