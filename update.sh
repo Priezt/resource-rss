@@ -207,5 +207,7 @@ j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.aside ul li:
 
 j.rip 'http://kr.hujiang.com/new/tag/%E9%9F%A9%E8%AF%AD%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/' 'ul#article_list li' 'a.a_article_title' 'a.a_article_title' | head | ./jrrs.sh KoreanMeiRiYiJu
 
+ng-rip.rb http://bt.ktxp.com/playbill.php 'div.item-box div.container dl dd a' | $FMR KTXP_JieMuDan
+
 date
 echo ======================================
