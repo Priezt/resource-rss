@@ -54,58 +54,31 @@ yyets_rmvb_mp4 http://www.yyets.com/resource/32102 TheStrain
 yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
 yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
 
-yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
-yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
-yayaxz http://www.yayaxz.com/resource/26779 yayaArrow
-yayaxz http://www.yayaxz.com/resource/11057 yayaTheWalkingDead
-yayaxz http://www.yayaxz.com/resource/11007 yayaMentalist
-yayaxz http://www.yayaxz.com/resource/10990 yayaTwoAndAHalfMen
-yayaxz http://www.yayaxz.com/resource/28235 yayaBlackMirror
-yayaxz http://www.yayaxz.com/resource/10733 yayaGameOfThrones
-yayaxz http://www.yayaxz.com/resource/29725 yayaGalileo
-yayaxz http://www.yayaxz.com/resource/30010 yayaAvengersAssemble
-yayaxz http://www.yayaxz.com/resource/30509 yayaHulkAndTheAgentsOfSmash
-yayaxz http://www.yayaxz.com/resource/30330 yayaSleepyHollow
-yayaxz http://www.yayaxz.com/resource/30675 yayaSHIELD
-yayaxz http://www.yayaxz.com/resource/30227 yayaAlmostHuman
-yayaxz http://www.yayaxz.com/resource/11049 yayaAmericanHorrorStory
-yayaxz http://www.yayaxz.com/resource/11133 yayaSherlock
-yayaxz http://www.yayaxz.com/resource/31088 yayaHelix
-yayaxz http://www.yayaxz.com/resource/10682 yayaUshijimakun
-yayaxz http://www.yayaxz.com/resource/31801 yayaSiliconValley
-yayaxz http://www.yayaxz.com/resource/32235 yayaTheFlash
-yayaxz http://www.yayaxz.com/resource/32264 yayaConstantine
-yayaxz http://www.yayaxz.com/resource/32143 yayaExtant
-yayaxz http://www.yayaxz.com/resource/32102 yayaTheStrain
-yayaxz http://www.yayaxz.com/resource/26326 yayaDoctorWho
-yayaxz http://www.yayaxz.com/resource/32725 yayaZNation
-
-#yayaxz http://www.yayaxz.com/resource/26753 yayaAvengersS02
-#yayaxz http://www.yayaxz.com/resource/26745 yayaTron
-#yayaxz http://www.yayaxz.com/resource/26737 yayaUltimateSpiderMan
 #yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
 #yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
 #yayaxz http://www.yayaxz.com/resource/26779 yayaArrow
 #yayaxz http://www.yayaxz.com/resource/11057 yayaTheWalkingDead
 #yayaxz http://www.yayaxz.com/resource/11007 yayaMentalist
 #yayaxz http://www.yayaxz.com/resource/10990 yayaTwoAndAHalfMen
-#yayaxz http://www.yayaxz.com/resource/28793 yayaHouseOfCards
-#yayaxz http://www.yayaxz.com/resource/11103 yaya2BrokeGirls
 #yayaxz http://www.yayaxz.com/resource/28235 yayaBlackMirror
-#yayaxz http://www.yayaxz.com/resource/10452 yayaArcher
 #yayaxz http://www.yayaxz.com/resource/10733 yayaGameOfThrones
 #yayaxz http://www.yayaxz.com/resource/29725 yayaGalileo
-#yayaxz http://www.yayaxz.com/resource/26790 yayaAngerManagement
 #yayaxz http://www.yayaxz.com/resource/30010 yayaAvengersAssemble
-#yayaxz http://www.yayaxz.com/resource/30347 yayaBewareTheBatman
 #yayaxz http://www.yayaxz.com/resource/30509 yayaHulkAndTheAgentsOfSmash
 #yayaxz http://www.yayaxz.com/resource/30330 yayaSleepyHollow
 #yayaxz http://www.yayaxz.com/resource/30675 yayaSHIELD
-#yayaxz http://www.yayaxz.com/resource/30616 yayaAtlantis
-#yayaxz http://www.yayaxz.com/resource/30032 yayaTheTomorrowPeople
-#yayaxz http://www.yayaxz.com/resource/30883 yayaAndoroido
-#yayaxz http://www.yayaxz.com/resource/29984 yayaChosen
 #yayaxz http://www.yayaxz.com/resource/30227 yayaAlmostHuman
+#yayaxz http://www.yayaxz.com/resource/11049 yayaAmericanHorrorStory
+#yayaxz http://www.yayaxz.com/resource/11133 yayaSherlock
+#yayaxz http://www.yayaxz.com/resource/31088 yayaHelix
+#yayaxz http://www.yayaxz.com/resource/10682 yayaUshijimakun
+#yayaxz http://www.yayaxz.com/resource/31801 yayaSiliconValley
+#yayaxz http://www.yayaxz.com/resource/32235 yayaTheFlash
+#yayaxz http://www.yayaxz.com/resource/32264 yayaConstantine
+#yayaxz http://www.yayaxz.com/resource/32143 yayaExtant
+#yayaxz http://www.yayaxz.com/resource/32102 yayaTheStrain
+#yayaxz http://www.yayaxz.com/resource/26326 yayaDoctorWho
+#yayaxz http://www.yayaxz.com/resource/32725 yayaZNation
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
@@ -208,6 +181,21 @@ j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.aside ul li:
 j.rip 'http://kr.hujiang.com/new/tag/%E9%9F%A9%E8%AF%AD%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/' 'ul#article_list li' 'a.a_article_title' 'a.a_article_title' | head | ./jrrs.sh KoreanMeiRiYiJu
 
 ng-rip.rb http://bt.ktxp.com/playbill.php 'div.item-box div.container dl dd a' | $FMR KTXP_JieMuDan
+
+hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Search' 'div.body div.toplist td.name' | $FMR HDWAI_$1; }
+
+#hdwai Z.Nation
+#hdwai Supernatural
+#hdwai The.Big.Bang.Theory
+#hdwai Arrow
+#hdwai The.Walking.Dead
+#hdwai The.Mentalist
+#hdwai Two.And.A.Half.Men
+#hdwai Game.Of.Thrones
+#hdwai Avengers.Assemble
+#hdwai Marvels.Agents.of.S.H.I.E.L.D
+#hdwai THe.Flash
+#hdwai Doctor.Who
 
 date
 echo ======================================
