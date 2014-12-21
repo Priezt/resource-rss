@@ -80,31 +80,31 @@ yyets_rmvb_mp4 http://www.rrys123.com/resource/32725 ZNation
 #yyets_rmvb_mp4 http://www.yyets.com/resource/26326 DoctorWho
 #yyets_rmvb_mp4 http://www.yyets.com/resource/32725 ZNation
 
-#yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
-#yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
-#yayaxz http://www.yayaxz.com/resource/26779 yayaArrow
-#yayaxz http://www.yayaxz.com/resource/11057 yayaTheWalkingDead
-#yayaxz http://www.yayaxz.com/resource/11007 yayaMentalist
-#yayaxz http://www.yayaxz.com/resource/10990 yayaTwoAndAHalfMen
-#yayaxz http://www.yayaxz.com/resource/28235 yayaBlackMirror
-#yayaxz http://www.yayaxz.com/resource/10733 yayaGameOfThrones
-#yayaxz http://www.yayaxz.com/resource/29725 yayaGalileo
-#yayaxz http://www.yayaxz.com/resource/30010 yayaAvengersAssemble
-#yayaxz http://www.yayaxz.com/resource/30509 yayaHulkAndTheAgentsOfSmash
-#yayaxz http://www.yayaxz.com/resource/30330 yayaSleepyHollow
-#yayaxz http://www.yayaxz.com/resource/30675 yayaSHIELD
-#yayaxz http://www.yayaxz.com/resource/30227 yayaAlmostHuman
-#yayaxz http://www.yayaxz.com/resource/11049 yayaAmericanHorrorStory
-#yayaxz http://www.yayaxz.com/resource/11133 yayaSherlock
-#yayaxz http://www.yayaxz.com/resource/31088 yayaHelix
-#yayaxz http://www.yayaxz.com/resource/10682 yayaUshijimakun
-#yayaxz http://www.yayaxz.com/resource/31801 yayaSiliconValley
-#yayaxz http://www.yayaxz.com/resource/32235 yayaTheFlash
-#yayaxz http://www.yayaxz.com/resource/32264 yayaConstantine
-#yayaxz http://www.yayaxz.com/resource/32143 yayaExtant
-#yayaxz http://www.yayaxz.com/resource/32102 yayaTheStrain
-#yayaxz http://www.yayaxz.com/resource/26326 yayaDoctorWho
-#yayaxz http://www.yayaxz.com/resource/32725 yayaZNation
+yayaxz http://www.yayaxz.com/resource/11015 yayaSupernatural
+yayaxz http://www.yayaxz.com/resource/11005 yayaTBBT
+yayaxz http://www.yayaxz.com/resource/26779 yayaArrow
+yayaxz http://www.yayaxz.com/resource/11057 yayaTheWalkingDead
+yayaxz http://www.yayaxz.com/resource/11007 yayaMentalist
+yayaxz http://www.yayaxz.com/resource/10990 yayaTwoAndAHalfMen
+yayaxz http://www.yayaxz.com/resource/28235 yayaBlackMirror
+yayaxz http://www.yayaxz.com/resource/10733 yayaGameOfThrones
+yayaxz http://www.yayaxz.com/resource/29725 yayaGalileo
+yayaxz http://www.yayaxz.com/resource/30010 yayaAvengersAssemble
+yayaxz http://www.yayaxz.com/resource/30509 yayaHulkAndTheAgentsOfSmash
+yayaxz http://www.yayaxz.com/resource/30330 yayaSleepyHollow
+yayaxz http://www.yayaxz.com/resource/30675 yayaSHIELD
+yayaxz http://www.yayaxz.com/resource/30227 yayaAlmostHuman
+yayaxz http://www.yayaxz.com/resource/11049 yayaAmericanHorrorStory
+yayaxz http://www.yayaxz.com/resource/11133 yayaSherlock
+yayaxz http://www.yayaxz.com/resource/31088 yayaHelix
+yayaxz http://www.yayaxz.com/resource/10682 yayaUshijimakun
+yayaxz http://www.yayaxz.com/resource/31801 yayaSiliconValley
+yayaxz http://www.yayaxz.com/resource/32235 yayaTheFlash
+yayaxz http://www.yayaxz.com/resource/32264 yayaConstantine
+yayaxz http://www.yayaxz.com/resource/32143 yayaExtant
+yayaxz http://www.yayaxz.com/resource/32102 yayaTheStrain
+yayaxz http://www.yayaxz.com/resource/26326 yayaDoctorWho
+yayaxz http://www.yayaxz.com/resource/32725 yayaZNation
 
 pq-rip.py -u 'http://www.yyets.com/' 'div.top24hours ul li a' | $FMR YYeTsHome
 
@@ -195,6 +195,8 @@ j.rip 'http://bt.ktxp.com/search.php?keyword=JOJO%E5%A5%87%E5%A6%99%E5%86%92%E9%
 j.rip 'http://bt.ktxp.com/search.php?keyword=%E6%B8%B8%E6%88%8F%E7%8E%8B' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh YuGiOh_ARCV_KTXP
 
 j.rip 'http://bt.ktxp.com/search.php?keyword=%E7%81%AB%E6%98%9F%E5%BC%82%E7%A7%8D' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh TerraFormars_KTXP
+
+j.rip 'http://bt.ktxp.com/search.php?keyword=%E7%89%99%E7%8B%BC' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh Garo_KTXP
 
 j.rip 'http://bt.ktxp.com/search.php?keyword=%E5%AF%84%E7%94%9F%E5%85%BD' 'td.ttitle' 'a:eq(2)' 'a:eq(2)' | ./jrrs.sh Kiseijuu_KTXP
 
