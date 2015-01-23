@@ -28,32 +28,35 @@ yayaxz() { curl -s $1 | grep -A 5 resource-item | grep -v 'class="type"' | grep 
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/11015 Supernatural
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/11005 TBBT
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/26779 Arrow
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/11057 TheWalkingDead
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/11007 Mentalist
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/10990 TwoAndAHalfMen
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/28235 BlackMirror
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/10733 GameOfThrones
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/29725 Galileo
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/30010 AvengersAssemble
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/30509 HulkAndTheAgentsOfSmash
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/30330 SleepyHollow
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/30675 SHIELD
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/30227 AlmostHuman
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/11049 AmericanHorrorStory
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/11133 Sherlock
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/31088 Helix
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/10682 Ushijimakun
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/31801 SiliconValley
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/32235 TheFlash
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/32264 Constantine
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/32143 Extant
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/32102 TheStrain
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/26326 DoctorWho
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/32725 ZNation
-yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/33110 AgentCarter
+#get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
+get_yyets() { yyets_rmvb_mp4 http://www.rrys123.com/resource/$1 $2 ; }
+
+get_yyets 11015 Supernatural
+get_yyets 11005 TBBT
+get_yyets 26779 Arrow
+get_yyets 11057 TheWalkingDead
+get_yyets 11007 Mentalist
+get_yyets 10990 TwoAndAHalfMen
+get_yyets 28235 BlackMirror
+get_yyets 10733 GameOfThrones
+get_yyets 29725 Galileo
+get_yyets 30010 AvengersAssemble
+get_yyets 30509 HulkAndTheAgentsOfSmash
+get_yyets 30330 SleepyHollow
+get_yyets 30675 SHIELD
+get_yyets 30227 AlmostHuman
+get_yyets 11049 AmericanHorrorStory
+get_yyets 11133 Sherlock
+get_yyets 31088 Helix
+get_yyets 10682 Ushijimakun
+get_yyets 31801 SiliconValley
+get_yyets 32235 TheFlash
+get_yyets 32264 Constantine
+get_yyets 32143 Extant
+get_yyets 32102 TheStrain
+get_yyets 26326 DoctorWho
+get_yyets 32725 ZNation
+get_yyets 33110 AgentCarter
 
 #yyets_rmvb_mp4 http://www.rrys123.com/resource/11015 Supernatural
 #yyets_rmvb_mp4 http://www.rrys123.com/resource/11005 TBBT
@@ -251,6 +254,11 @@ hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Sea
 #hdwai Marvels.Agents.of.S.H.I.E.L.D
 #hdwai THe.Flash
 #hdwai Doctor.Who
+
+dmhy() { j.rip $1 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | ./jrrs.sh $2 ; }
+
+dmhy 'http://share.dmhy.org/topics/list?keyword=%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
+dmhy 'http://share.dmhy.org/topics/list?keyword=JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
 
 date
 echo ======================================
