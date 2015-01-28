@@ -260,5 +260,8 @@ dmhy() { j.rip $1 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' 
 dmhy 'http://share.dmhy.org/topics/list?keyword=%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
 dmhy 'http://share.dmhy.org/topics/list?keyword=JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
 
+curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
+
+
 date
 echo ======================================
