@@ -28,8 +28,8 @@ yayaxz() { curl -s $1 | grep -A 5 resource-item | grep -v 'class="type"' | grep 
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-#get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
-get_yyets() { yyets_rmvb_mp4 http://www.rrys123.com/resource/$1 $2 ; }
+get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
+#get_yyets() { yyets_rmvb_mp4 http://www.rrys123.com/resource/$1 $2 ; }
 
 get_yyets 11015 Supernatural
 get_yyets 11005 TBBT
@@ -255,10 +255,10 @@ hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Sea
 #hdwai THe.Flash
 #hdwai Doctor.Who
 
-dmhy() { j.rip $1 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | ./jrrs.sh $2 ; }
+dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='$1 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | head -20 | ./jrrs.sh $2 ; }
 
-dmhy 'http://share.dmhy.org/topics/list?keyword=%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
-dmhy 'http://share.dmhy.org/topics/list?keyword=JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
+dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
+dmhy 'JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
