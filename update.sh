@@ -255,7 +255,7 @@ hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Sea
 #hdwai THe.Flash
 #hdwai Doctor.Who
 
-dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='$1 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | head -20 | ./jrrs.sh $2 ; }
+dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='"$1" 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | head -20 | ./jrrs.sh $2 ; }
 
 dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
 dmhy 'JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
