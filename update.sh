@@ -262,6 +262,7 @@ dmhy 'JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
+j.rip http://www.bttiantang.com/ 'div.ml div.item:has(div)' 'div.title p.tt a' 'div.title p.tt a' 'div.litpic a img' | ./jrrs.sh BT_TianTang
 
 date
 echo ======================================
