@@ -259,6 +259,7 @@ dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='"$1" 'table#topic_lis
 
 dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
 dmhy 'JoJo+%E6%98%9F%E5%A1%B5' JoJo3_dmhy
+dmhy '%E6%B8%B8%E6%88%8F%E7%8E%8B' YuGiOh_ARCV_dmhy
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
