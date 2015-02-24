@@ -29,6 +29,7 @@ yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
 get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
+#get_yyets() { yyets_rmvb_mp4 http://www.mhxz001.com/file/$1 $2 ; }
 #get_yyets() { yyets_rmvb_mp4 http://www.rrys123.com/resource/$1 $2 ; }
 
 get_yyets 11015 Supernatural
