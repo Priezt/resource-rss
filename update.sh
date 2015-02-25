@@ -266,7 +266,7 @@ curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep
 
 j.rip http://www.bttiantang.com/ 'div.ml div.item:has(div)' 'div.title p.tt a' 'div.title p.tt a' 'div.litpic a img' | ./jrrs.sh BT_TianTang
 
-j.rip http://www.6vhao.net/ 'div.tjlist ul li' 'p' 'a' 'a img' | ./jrrs.sh 6vhao
+j.rip http://www.6vhao.net/ 'div.tjlist ul li' 'p' 'a' 'a img' | head -10 | ./jrrs.sh 6vhao
 
 date
 echo ======================================
