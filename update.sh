@@ -30,6 +30,7 @@ yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | per
 
 get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
 #get_yyets() { yyets_rmvb_mp4 http://www.mhxz001.com/file/$1 $2 ; }
+#get_yyets() { yyets_rmvb_mp4 http://www.mhxz002.com/file/$1 $2 ; }
 #get_yyets() { yyets_rmvb_mp4 http://www.rrys123.com/resource/$1 $2 ; }
 
 get_yyets 11015 Supernatural
