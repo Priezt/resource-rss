@@ -270,5 +270,7 @@ j.rip http://www.bttiantang.com/ 'div.ml div.item:has(div)' 'div.title p.tt a' '
 
 j.rip http://www.6vhao.net/ 'div.tjlist ul li' 'p' 'a' 'a img' | head -10 | ./jrrs.sh 6vhao
 
+j.rip http://www.ituring.com.cn/ 'div.tbox div.tab dl:first div.arc-list dl dt' 'a' | ./jrrs.sh ituring
+
 date
 echo ======================================
