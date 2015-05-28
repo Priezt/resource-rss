@@ -272,5 +272,8 @@ j.rip http://www.6vhao.net/ 'div.tjlist ul li' 'p' 'a' 'a img' | head -10 | ./jr
 
 j.rip http://www.ituring.com.cn/ 'div.tbox div.tab dl:first div.arc-list dl dt' 'a' | ./jrrs.sh ituring
 
+curl -s http://d.163.com/ | iconv -f GBK -t UTF-8 > ,t
+j.rip -u http://d.163.com/ ,t 'div.blog-articles div.article-wrapper' 'div.article-content h2 a' 'div.article-content h2 a' 'div.article-image a img' | ./jrrs.sh D3_163
+
 date
 echo ======================================
