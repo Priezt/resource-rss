@@ -278,6 +278,7 @@ j.rip -u http://d.163.com/ ,t 'div.blog-articles div.article-wrapper' 'div.artic
 xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'p.name' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
 
 xunbo 20296 GameOfThrone
+xunbo 20663 SiliconValley
 
 date
 echo ======================================
