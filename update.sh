@@ -284,6 +284,7 @@ magdown() { j.rip 'http://cili002.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./j
 
 magdown '%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F' GameOfThrones
 magdown '%E7%A1%85%E8%B0%B7' SiliconValley
+magdown '%E9%BB%91%E5%AE%A2%E5%86%9B%E5%9B%A2' MrRobot
 
 date
 echo ======================================
