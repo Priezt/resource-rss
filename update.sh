@@ -175,5 +175,10 @@ magdown '%E7%A1%85%E8%B0%B7' SiliconValley
 magdown '%E9%BB%91%E5%AE%A2%E5%86%9B%E5%9B%A2' MrRobot
 magdown '%E7%9C%9F%E5%AE%9E%E7%9A%84%E4%BA%BA%E7%B1%BB' Humans
 
+webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
+
+webtoon "tales-of-the-unusual/list?title_no=296" QiQiGuaiGuai
+webtoon "hive/list?title_no=223" ChongXue
+
 date
 echo ======================================
