@@ -17,3 +17,5 @@ cat index-header.html ,index-content.html index-tail.html > index.html
 #tar zcf sis.tar.gz sis
 #cp sis.tar.gz ~/OneDrive/Temp/sis.tar.gz
 
+onedrive-d restart
+
