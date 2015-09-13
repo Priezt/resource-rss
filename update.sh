@@ -180,6 +180,7 @@ magdown '%E8%A1%8C%E5%B0%B8%E4%B9%8B%E6%83%A7' FearTheWalkingDead
 magdown 'Extant' Extant
 magdown 'Strain' TheStrain
 magdown 'BattleBots' BattleBots
+magdown '%E5%83%B5%E5%B0%B8%E5%9B%BD%E5%BA%A6' ZNation
 
 webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
 
