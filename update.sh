@@ -182,6 +182,7 @@ magdown 'Extant' Extant
 magdown 'Strain' TheStrain
 magdown 'BattleBots' BattleBots
 magdown '%E5%83%B5%E5%B0%B8%E5%9B%BD%E5%BA%A6' ZNation
+magdown '%E7%A5%9E%E7%A7%98%E5%8D%9A%E5%A3%AB' DoctorWho
 
 webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
 
