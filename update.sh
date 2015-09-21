@@ -193,5 +193,9 @@ dbfansub() { pq-rip.py http://dbfansub.com/tvshow/$1.html 'article#content div.p
 
 dbfansub 7691 RickAndMortyS02
 
+xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'p.name' | perl -pe '$_ = "http://www.xiamp4.com/Html/'$1'.html|".$_' | $FMR xiamp4_$2; }
+
+xiamp4 GP21506 Garo_GoldStorm
+
 date
 echo ======================================
