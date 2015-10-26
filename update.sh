@@ -84,7 +84,6 @@ letv http://so.letv.com/comic/88310.html Garo3
 # FRTVS
 
 pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl.t_attachlist dt a[href*=attachpage]' | $FMR DoctorWhoS07
-pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
 # 2tu.cc
 
@@ -202,6 +201,8 @@ dbfansub 7691 RickAndMortyS02
 xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'p.name' | perl -pe '$_ = "http://www.xiamp4.com/Html/'$1'.html|".$_' | $FMR xiamp4_$2; }
 
 xiamp4 GP21506 Garo_GoldStorm
+
+pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
 date
 echo ======================================
