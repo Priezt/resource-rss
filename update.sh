@@ -84,6 +84,7 @@ letv http://so.letv.com/comic/88310.html Garo3
 # FRTVS
 
 pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl.t_attachlist dt a[href*=attachpage]' | $FMR DoctorWhoS07
+pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
 # 2tu.cc
 
