@@ -189,6 +189,7 @@ magdown '%E8%8B%B1%E9%9B%84' Heroes
 magdown '%E7%A5%9E%E7%9B%BE' Shield
 magdown 'Flash' Flash
 magdown '%E5%87%B6%E9%AC%BC%E6%81%B6%E7%81%B5' Supernatural
+magdown '%E9%AC%BC%E7%8E%A9%E4%BA%BA' AshVSEvilDead
 
 webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
 
