@@ -165,11 +165,12 @@ j.rip http://www.ituring.com.cn/ 'div.tbox div.tab dl:first div.arc-list dl dt' 
 curl -s http://d.163.com/ | iconv -f GBK -t UTF-8 > ,t
 j.rip -u http://d.163.com/ ,t 'div.blog-articles div.article-wrapper' 'div.article-content h2 a' 'div.article-content h2 a' 'div.article-image a img' | ./jrrs.sh D3_163
 
-xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'p.name' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
-
+#xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'p.name' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
+xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'div.play-list a' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
 
 xunbo 20296 GameOfThrone
 xunbo 20663 SiliconValley
+xunbo 21987 ShouTaiJyou
 
 #magdown() { j.rip 'http://cili002.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./jrrs.sh magdown_$2 ; }
 magdown() { j.rip 'http://cili006.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./jrrs.sh magdown_$2 ; }
