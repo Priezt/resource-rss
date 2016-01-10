@@ -192,6 +192,7 @@ magdown '%E7%A5%9E%E7%9B%BE' Shield
 magdown 'Flash' Flash
 magdown '%E5%87%B6%E9%AC%BC%E6%81%B6%E7%81%B5' Supernatural
 magdown '%E9%AC%BC%E7%8E%A9%E4%BA%BA' AshVSEvilDead
+magdown '%E6%B2%99%E5%A8%9C%E6%8B%89%E4%BC%A0%E5%A5%87' TheShannaraChronicles
 
 webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
 
