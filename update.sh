@@ -154,6 +154,7 @@ dmhy '%E9%8A%80%E9%AD%82' Gintama_dmhy
 dmhy '%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA' OnePunchMan
 dmhy 'Kowabon' Kowabon
 dmhy '%E4%BA%BA%E9%80%A0%E4%BA%BA009' Cyborg009
+dmhy '%E4%BA%9E%E4%BA%BA' Ajin
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
