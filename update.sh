@@ -212,5 +212,7 @@ xiamp4 GP21767 AKB_Horror
 
 pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
+curl -s http://toutiao.io | grep -A 2 '<h3 class="title">' | grep target | sed 's/<\/.*//' | sed 's/.*href="//' | sed 's/">/\|/' | $FMR TouTiao
+
 date
 echo ======================================
