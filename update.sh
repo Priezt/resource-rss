@@ -190,6 +190,7 @@ magdown '%E7%A5%9E%E7%A7%98%E5%8D%9A%E5%A3%AB' DoctorWho
 magdown '%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8' BigBangTheory
 magdown '%E8%8B%B1%E9%9B%84' Heroes
 magdown '%E7%A5%9E%E7%9B%BE' Shield
+magdown 'Arrow' Arrow
 magdown 'Flash' Flash
 magdown '%E5%87%B6%E9%AC%BC%E6%81%B6%E7%81%B5' Supernatural
 magdown '%E9%AC%BC%E7%8E%A9%E4%BA%BA' AshVSEvilDead
