@@ -43,7 +43,8 @@ print HTML $description."<br>\n";
 for my $img (@img_filenames){
 	print HTML "<img src=\"threads/$id/$img\"><br>\n";
 }
-print HTML "<h1><a href=\"threads/$id/seed.torrent\">Torrent</a><br>\n</h1>";
+print HTML "<h1><a href=\"threads/$id/seed.torrent\">Torrent</a> <a href=\"$url\">Link</a><br>\n</h1>";
+print HTML "<h1><br>\n</h1>";
 print HTML "<div class=\"close\">Close</div>";
 print HTML "<hr>\n";
 print HTML "</div>\n";
