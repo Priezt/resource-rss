@@ -148,7 +148,7 @@ hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Sea
 dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='"$1" 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | head -20 | ./jrrs.sh $2 ; }
 
 dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
-dmhy 'JOJO+%E5%A5%87%E5%A6%99' JoJoAnime
+dmhy 'JOJO+%E5%A5%87%E5%A6%99' JoJoAnime_dmhy
 dmhy '%E6%B8%B8%E6%88%8F%E7%8E%8B' YuGiOh_ARCV_dmhy
 dmhy '%E9%8A%80%E9%AD%82' Gintama_dmhy
 dmhy '%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA' OnePunchMan
