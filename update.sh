@@ -156,6 +156,7 @@ dmhy 'Kowabon' Kowabon
 dmhy '%E4%BA%BA%E9%80%A0%E4%BA%BA009' Cyborg009
 dmhy '%E4%BA%9E%E4%BA%BA' Ajin
 dmhy 'kagewani' Kagewani
+dmhy '%E5%9D%82%E6%9C%AC' SakamotoDesuga
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
