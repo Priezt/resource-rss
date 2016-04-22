@@ -214,6 +214,7 @@ xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'div.play-list a' | perl
 xiamp4 GP21506 Garo_GoldStorm
 xiamp4 GP21767 AKB_Horror
 xiamp4 GP22444 ZhenTianWan
+xiamp4 GP23112 Garo_MoJieLieZhuan
 
 pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
