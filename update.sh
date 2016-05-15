@@ -158,6 +158,7 @@ dmhy '%E4%BA%9E%E4%BA%BA' Ajin
 dmhy 'kagewani' Kagewani
 dmhy '%E5%9D%82%E6%9C%AC' SakamotoDesuga
 dmhy 'Joker+Game' JokerGame
+dmhy '%E7%94%B2%E9%90%B5%E5%9F%8E' KoutetsujouNoKabaneri
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
