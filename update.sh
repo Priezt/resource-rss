@@ -222,5 +222,7 @@ pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a
 
 curl -s http://toutiao.io | grep -A 2 '<h3 class="title">' | grep target | sed 's/<\/.*//' | sed 's/.*href="//' | sed 's/">/\|/' | $FMR TouTiao
 
+j.rip http://www.freebuf.com/ 'div#timeline div.news-info dt' 'a' | ./jrrs.sh FreeBuf
+
 date
 echo ======================================
