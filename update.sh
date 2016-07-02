@@ -180,7 +180,7 @@ xunbo 20663 SiliconValley
 xunbo 21987 ShouTaiJyou
 
 #magdown() { j.rip 'http://cili001.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./jrrs.sh magdown_$2 ; }
-magdown() { j.rip 'http://cili02.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./jrrs.sh magdown_$2 ; }
+magdown() { j.rip 'http://cili03.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./jrrs.sh magdown_$2 ; }
 
 magdown '%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F' GameOfThrones
 magdown '%E7%A1%85%E8%B0%B7' SiliconValley
