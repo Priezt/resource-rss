@@ -206,6 +206,7 @@ webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li
 
 webtoon "tales-of-the-unusual/list?title_no=296" QiQiGuaiGuai
 webtoon "hive/list?title_no=223" ChongXue
+webtoon "jinri/list?title_no=642" JinYaoRi
 
 dbfansub() { pq-rip.py http://dbfansub.com/tvshow/$1.html 'article#content div.panel-body div.entry-content table tbody tr td.el-s-left a' | perl -pe '$_ = "http://dbfansub.com/tvshow/'$1'.html|".$_' | $FMR dbfansub_$2; }
 
