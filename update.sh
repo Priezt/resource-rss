@@ -215,10 +215,8 @@ dbfansub 7691 RickAndMortyS02
 #xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'p.name' | perl -pe '$_ = "http://www.xiamp4.com/Html/'$1'.html|".$_' | $FMR xiamp4_$2; }
 xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'div.play-list a' | perl -pe '$_ = "http://www.xiamp4.com/Html/'$1'.html|".$_' | $FMR xiamp4_$2; }
 
-xiamp4 GP21506 Garo_GoldStorm
-xiamp4 GP21767 AKB_Horror
 xiamp4 GP22444 ZhenTianWan
-xiamp4 GP23112 Garo_MoJieLieZhuan
+xiamp4 GP23720 Ushijima3
 
 pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
