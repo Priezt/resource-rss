@@ -160,7 +160,7 @@ dmhy '%E5%9D%82%E6%9C%AC' SakamotoDesuga
 dmhy 'Joker+Game' JokerGame
 dmhy '%E7%94%B2%E9%90%B5%E5%9F%8E' KoutetsujouNoKabaneri
 dmhy '%E6%88%91%E7%9A%84%E8%8B%B1%E9%9B%84%E5%AD%A6%E9%99%A2' BokuNoHeroAcademia
-dmhy '%E7%83%99%E5%8D%B0%7C%E5%8A%8D%E9%A2%A8' Berserk
+dmhy 'berserk' Berserk
 
 curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
