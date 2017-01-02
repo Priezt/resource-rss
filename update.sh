@@ -225,5 +225,7 @@ curl -s http://toutiao.io | grep -A 2 '<h3 class="title">' | grep target | sed '
 
 #j.rip http://www.freebuf.com/ 'div#timeline div.news-info dt' 'a' | ./jrrs.sh FreeBuf
 
+j.rip http://www.dysfz.net/ 'ul.movie-list' 'h2 a' | ./jrrs.sh dysfz
+
 date
 echo ======================================
