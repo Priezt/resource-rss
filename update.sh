@@ -43,7 +43,7 @@ j.rip http://www.piaohua.com/ 'div#im li' 'strong' | ./jrrs.sh PiaoHua
 # iqiyi
 
 #j.rip http://www.iqiyi.com/a_19rrhbkchh.html '#j-pagelist-content ul li' 'p a' | ./jrrs.sh HuaJiangHu
-j.rip http://www.iqiyi.com/a_19rrhbkchh.html 'div.mod_album_lists ul li.album_item'| ./jrrs.sh HuaJiangHu
+#j.rip http://www.iqiyi.com/a_19rrhbkchh.html 'div.mod_album_lists ul li.album_item'| ./jrrs.sh HuaJiangHu
 
 # tudou
 
@@ -79,11 +79,11 @@ j.rip http://www.iqiyi.com/a_19rrhbkchh.html 'div.mod_album_lists ul li.album_it
 # Letv
 
 #letv() { w3m -dump -cols 500  $1 | pcregrep '\s\d\d:\d\d\s*$' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
-letv http://so.letv.com/comic/88310.html Garo3
+#letv http://so.letv.com/comic/88310.html Garo3
 
 # FRTVS
 
-pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl.t_attachlist dt a[href*=attachpage]' | $FMR DoctorWhoS07
+#pq-rip.py -u http://www.1000fr.net/thread-389512-1-2.html 'div.postattachlist dl.t_attachlist dt a[href*=attachpage]' | $FMR DoctorWhoS07
 
 # 2tu.cc
 
@@ -122,11 +122,11 @@ j.rip -u http://h.163.com/ <(curl -s http://h.163.com/ | iconv -f GBK -t UTF-8) 
 
 #j.rip http://www.chinaocg.cn/ 'div.items' 'a' | ./jrrs.sh CHINAOCG
 
-j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.article ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookFiction
+#j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.article ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookFiction
 
-j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.aside ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookReal
+#j.rip 'http://book.douban.com/latest?icn=index-latestbook-all' 'div.aside ul li:not([class*=clear])' 'div.detail-frame h2' 'a' |  ./jrrs.sh DoubanNewBookReal
 
-j.rip 'http://kr.hujiang.com/new/tag/%E9%9F%A9%E8%AF%AD%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/' 'ul#article_list li' 'a.a_article_title' 'a.a_article_title' | head | ./jrrs.sh KoreanMeiRiYiJu
+#j.rip 'http://kr.hujiang.com/new/tag/%E9%9F%A9%E8%AF%AD%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/' 'ul#article_list li' 'a.a_article_title' 'a.a_article_title' | head | ./jrrs.sh KoreanMeiRiYiJu
 
 #ng-rip.rb http://bt.ktxp.com/playbill.php 'div.item-box div.container dl dd a' | $FMR KTXP_JieMuDan
 
@@ -147,22 +147,22 @@ hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Sea
 
 dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='"$1" 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | head -20 | ./jrrs.sh $2 ; }
 
-dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
-dmhy 'JOJO+%E5%A5%87%E5%A6%99' JoJoAnime_dmhy
+#dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
+#dmhy 'JOJO+%E5%A5%87%E5%A6%99' JoJoAnime_dmhy
 dmhy '%E6%B8%B8%E6%88%8F%E7%8E%8B' YuGiOh_ARCV_dmhy
 dmhy '%E9%8A%80%E9%AD%82' Gintama_dmhy
 dmhy '%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA' OnePunchMan
-dmhy 'Kowabon' Kowabon
-dmhy '%E4%BA%BA%E9%80%A0%E4%BA%BA009' Cyborg009
-dmhy '%E4%BA%9E%E4%BA%BA' Ajin
+#dmhy 'Kowabon' Kowabon
+#dmhy '%E4%BA%BA%E9%80%A0%E4%BA%BA009' Cyborg009
+#dmhy '%E4%BA%9E%E4%BA%BA' Ajin
 dmhy 'kagewani' Kagewani
 dmhy '%E5%9D%82%E6%9C%AC' SakamotoDesuga
-dmhy 'Joker+Game' JokerGame
-dmhy '%E7%94%B2%E9%90%B5%E5%9F%8E' KoutetsujouNoKabaneri
+#dmhy 'Joker+Game' JokerGame
+#dmhy '%E7%94%B2%E9%90%B5%E5%9F%8E' KoutetsujouNoKabaneri
 dmhy '%E6%88%91%E7%9A%84%E8%8B%B1%E9%9B%84%E5%AD%A6%E9%99%A2' BokuNoHeroAcademia
 dmhy 'berserk' Berserk
 
-curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
+#curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
 j.rip http://www.bttiantang.com/ 'div.ml div.item:has(div)' 'div.title p.tt a' 'div.title p.tt a' 'div.litpic a img' | ./jrrs.sh BT_TianTang
 
@@ -176,32 +176,32 @@ j.rip -u http://d.163.com/ ,t 'div.blog-articles div.article-wrapper' 'div.artic
 #xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'p.name' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
 xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'div.play-list a' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
 
-xunbo 20296 GameOfThrone
-xunbo 20663 SiliconValley
-xunbo 21987 ShouTaiJyou
+#xunbo 20296 GameOfThrone
+#xunbo 20663 SiliconValley
+#xunbo 21987 ShouTaiJyou
 
 #magdown() { j.rip 'http://cili001.com/?topic_title3='"$1" 'span.b' 'a' 'a' | ./jrrs.sh magdown_$2 ; }
 magdown() { proxychains j.rip 'http://cili13.com/?topic_title3='"$1" 'span.b' 'a' 'a' | sed 1d | ./jrrs.sh magdown_$2 ; }
 
-magdown '%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F' GameOfThrones
-magdown '%E7%A1%85%E8%B0%B7' SiliconValley
-magdown '%E9%BB%91%E5%AE%A2%E5%86%9B%E5%9B%A2' MrRobot
-magdown '%E7%9C%9F%E5%AE%9E%E7%9A%84%E4%BA%BA%E7%B1%BB' Humans
-magdown '%E8%A1%8C%E5%B0%B8%E4%B9%8B%E6%83%A7' FearTheWalkingDead
-magdown 'Extant' Extant
-magdown 'Strain' TheStrain
-magdown 'BattleBots' BattleBots
-magdown '%E5%83%B5%E5%B0%B8%E5%9B%BD%E5%BA%A6' ZNation
-magdown '%E7%A5%9E%E7%A7%98%E5%8D%9A%E5%A3%AB' DoctorWho
-magdown '%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8' BigBangTheory
-magdown '%E8%8B%B1%E9%9B%84' Heroes
-magdown '%E7%A5%9E%E7%9B%BE' Shield
-magdown 'Arrow' Arrow
-magdown 'Flash' Flash
-magdown '%E5%87%B6%E9%AC%BC%E6%81%B6%E7%81%B5' Supernatural
-magdown '%E9%AC%BC%E7%8E%A9%E4%BA%BA' AshVSEvilDead
-magdown '%E6%B2%99%E5%A8%9C%E6%8B%89%E4%BC%A0%E5%A5%87' TheShannaraChronicles
-magdown '%E4%BA%A1%E5%91%BD%E4%B9%8B%E5%BE%92' Quarry
+#magdown '%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F' GameOfThrones
+#magdown '%E7%A1%85%E8%B0%B7' SiliconValley
+#magdown '%E9%BB%91%E5%AE%A2%E5%86%9B%E5%9B%A2' MrRobot
+#magdown '%E7%9C%9F%E5%AE%9E%E7%9A%84%E4%BA%BA%E7%B1%BB' Humans
+#magdown '%E8%A1%8C%E5%B0%B8%E4%B9%8B%E6%83%A7' FearTheWalkingDead
+#magdown 'Extant' Extant
+#magdown 'Strain' TheStrain
+#magdown 'BattleBots' BattleBots
+#magdown '%E5%83%B5%E5%B0%B8%E5%9B%BD%E5%BA%A6' ZNation
+#magdown '%E7%A5%9E%E7%A7%98%E5%8D%9A%E5%A3%AB' DoctorWho
+#magdown '%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8' BigBangTheory
+#magdown '%E8%8B%B1%E9%9B%84' Heroes
+#magdown '%E7%A5%9E%E7%9B%BE' Shield
+#magdown 'Arrow' Arrow
+#magdown 'Flash' Flash
+#magdown '%E5%87%B6%E9%AC%BC%E6%81%B6%E7%81%B5' Supernatural
+#magdown '%E9%AC%BC%E7%8E%A9%E4%BA%BA' AshVSEvilDead
+#magdown '%E6%B2%99%E5%A8%9C%E6%8B%89%E4%BC%A0%E5%A5%87' TheShannaraChronicles
+#magdown '%E4%BA%A1%E5%91%BD%E4%B9%8B%E5%BE%92' Quarry
 
 webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
 
@@ -211,21 +211,21 @@ webtoon "jinri/list?title_no=642" JinYaoRi
 
 dbfansub() { pq-rip.py http://dbfansub.com/tvshow/$1.html 'article#content div.panel-body div.entry-content table tbody tr td.el-s-left a' | perl -pe '$_ = "http://dbfansub.com/tvshow/'$1'.html|".$_' | $FMR dbfansub_$2; }
 
-dbfansub 7691 RickAndMortyS02
+#dbfansub 7691 RickAndMortyS02
 
 #xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'p.name' | perl -pe '$_ = "http://www.xiamp4.com/Html/'$1'.html|".$_' | $FMR xiamp4_$2; }
 xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'div.play-list a' | perl -pe '$_ = "http://www.xiamp4.com/Html/'$1'.html|".$_' | $FMR xiamp4_$2; }
 
-xiamp4 GP22444 ZhenTianWan
-xiamp4 GP23720 Ushijima3
+#xiamp4 GP22444 ZhenTianWan
+#xiamp4 GP23720 Ushijima3
 
 pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
-curl -s http://toutiao.io | grep -A 2 '<h3 class="title">' | grep target | sed 's/<\/.*//' | sed 's/.*href="//' | sed 's/">/\|/' | $FMR TouTiao
+#curl -s http://toutiao.io | grep -A 2 '<h3 class="title">' | grep target | sed 's/<\/.*//' | sed 's/.*href="//' | sed 's/">/\|/' | $FMR TouTiao
 
 #j.rip http://www.freebuf.com/ 'div#timeline div.news-info dt' 'a' | ./jrrs.sh FreeBuf
 
-j.rip http://www.dysfz.net/ 'ul.movie-list' 'h2 a' | ./jrrs.sh dysfz
+j.rip http://www.dysfz.net/ 'ul.movie-list li h2' 'a' | ./jrrs.sh dysfz
 
 date
 echo ======================================
