@@ -28,7 +28,7 @@ yayaxz() { curl -s $1 | grep -A 5 resource-item | grep -v 'class="type"' | grep 
 yyets() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'mkv|rmvb|avi|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 yyets_rmvb_mp4() { w3m -dump -cols 500  $1 | grep '[ ]' | egrep 'rmvb|mp4' | perl -pe 's/.* (1080P|720P|BD-720P|DVD|DVDSCR|HDTV|HR-HDTV|MP4|RMVB|WEB-DL)//' | perl -pe 's/(\.(?:mkv|rmvb|avi|mp4)).*/$1/' | perl -pe '$_ = "'$1'|".$_' | $FMR $2 ; }
 
-get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
+#get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
 #get_yyets() { yyets_rmvb_mp4 http://www.mhxz001.com/file/$1 $2 ; }
 #get_yyets() { yyets_rmvb_mp4 http://www.mhxz002.com/file/$1 $2 ; }
 #get_yyets() { yyets_rmvb_mp4 http://www.rrys123.com/resource/$1 $2 ; }
@@ -38,7 +38,7 @@ get_yyets() { yyets_rmvb_mp4 http://www.meihaodeyitian.com/file/$1 $2 ; }
 
 # movie
 #pq-rip.py -u 'http://www.piaohua.com' 'a > strong > font' | $FMR PiaoHua
-j.rip http://www.piaohua.com/ 'div#im li' 'strong' | ./jrrs.sh PiaoHua
+#j.rip http://www.piaohua.com/ 'div#im li' 'strong' | ./jrrs.sh PiaoHua
 
 # iqiyi
 
@@ -101,10 +101,10 @@ tucc() { pq-rip.py $1 'div#main div.sections ul.pdown li a' | perl -pe '$_ = "'$
 # BN
 
 #ng-rip.rb http://www.hearthstone.com.cn/home 'a.homeNewsItem' | $FMR HearthStoneBNNews
-j.rip http://www.hearthstone.com.cn/home 'div.homeNewsWrap' 'h4' | ./jrrs.sh HearthStoneBNNews
+#j.rip http://www.hearthstone.com.cn/home 'div.homeNewsWrap' 'h4' | ./jrrs.sh HearthStoneBNNews
 
 #ng-rip.rb -u http://h.163.com/ <(curl -s http://h.163.com/ | iconv -f GBK -t UTF-8) '#hotlist h2.blog-title a' | $FMR HearthStone163News
-j.rip -u http://h.163.com/ <(curl -s http://h.163.com/ | iconv -f GBK -t UTF-8) 'div.blog-news' 'a' | ./jrrs.sh HearthStone163News
+#j.rip -u http://h.163.com/ <(curl -s http://h.163.com/ | iconv -f GBK -t UTF-8) 'div.blog-news' 'a' | ./jrrs.sh HearthStone163News
 
 #j.rip 'http://dv.56.com/funny/?do=review' 'div.review_list li' 'div.vid_info' | ./jrrs.sh WeiBoJiangHu
 
@@ -147,34 +147,36 @@ hdwai() { ng-rip.rb 'http://hdwai.com/?topic_title='$1'&tvcat=0&searchsubmit=Sea
 
 dmhy() { j.rip 'http://share.dmhy.org/topics/list?keyword='"$1" 'table#topic_list > tbody > tr' 'td.title > a' 'td.title > a' | head -20 | ./jrrs.sh $2 ; }
 
-#dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
-#dmhy 'JOJO+%E5%A5%87%E5%A6%99' JoJoAnime_dmhy
-dmhy '%E6%B8%B8%E6%88%8F%E7%8E%8B' YuGiOh_ARCV_dmhy
-dmhy '%E9%8A%80%E9%AD%82' Gintama_dmhy
-dmhy '%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA' OnePunchMan
-#dmhy 'Kowabon' Kowabon
-#dmhy '%E4%BA%BA%E9%80%A0%E4%BA%BA009' Cyborg009
-#dmhy '%E4%BA%9E%E4%BA%BA' Ajin
-dmhy 'kagewani' Kagewani
-dmhy '%E5%9D%82%E6%9C%AC' SakamotoDesuga
-#dmhy 'Joker+Game' JokerGame
-#dmhy '%E7%94%B2%E9%90%B5%E5%9F%8E' KoutetsujouNoKabaneri
-dmhy '%E6%88%91%E7%9A%84%E8%8B%B1%E9%9B%84%E5%AD%A6%E9%99%A2' BokuNoHeroAcademia
-dmhy 'berserk' Berserk
+##dmhy '%E5%AF%84%E7%94%9F%E7%8D%B8' Kiseijuu_dmhy
+##dmhy 'JOJO+%E5%A5%87%E5%A6%99' JoJoAnime_dmhy
+#dmhy '%E6%B8%B8%E6%88%8F%E7%8E%8B' YuGiOh_ARCV_dmhy
+#dmhy '%E9%8A%80%E9%AD%82' Gintama_dmhy
+#dmhy '%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA' OnePunchMan
+##dmhy 'Kowabon' Kowabon
+##dmhy '%E4%BA%BA%E9%80%A0%E4%BA%BA009' Cyborg009
+##dmhy '%E4%BA%9E%E4%BA%BA' Ajin
+#dmhy 'kagewani' Kagewani
+#dmhy '%E5%9D%82%E6%9C%AC' SakamotoDesuga
+##dmhy 'Joker+Game' JokerGame
+##dmhy '%E7%94%B2%E9%90%B5%E5%9F%8E' KoutetsujouNoKabaneri
+#dmhy '%E6%88%91%E7%9A%84%E8%8B%B1%E9%9B%84%E5%AD%A6%E9%99%A2' BokuNoHeroAcademia
+#dmhy 'berserk' Berserk
+#dmhy 'JOJO' JoJoAnime_dmhy
 
 #curl -s 'http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103' | grep javascript:view | sed 's/<\/a.*//' | sed 's/.*>//' | perl -ple '$_="http://www.cnkszx.com/info/gateMenu.action?menu.menuCode=030103|".$_' | $FMR XiaoXueZhaoSheng
 
-j.rip http://www.bttiantang.com/ 'div.ml div.item:has(div)' 'div.title p.tt a' 'div.title p.tt a' 'div.litpic a img' | ./jrrs.sh BT_TianTang
+#j.rip http://www.bttiantang.com/ 'div.ml div.item:has(div)' 'div.title p.tt a' 'div.title p.tt a' 'div.litpic a img' | ./jrrs.sh BT_TianTang
 
-j.rip http://www.6vhao.net/ 'div.tjlist ul li' 'p' 'a' 'a img' | head -10 | ./jrrs.sh 6vhao
+#j.rip http://www.6vhao.net/ 'div.tjlist ul li' 'p' 'a' 'a img' | head -10 | ./jrrs.sh 6vhao
+j.rip http://www.6vhao.tv/ 'div.tjlist ul li' 'p' 'a' 'a img' | head -10 | ./jrrs.sh 6vhao
 
-j.rip http://www.ituring.com.cn/ 'div.tbox div.tab dl:first div.arc-list dl dt' 'a' | ./jrrs.sh ituring
+#j.rip http://www.ituring.com.cn/ 'div.tbox div.tab dl:first div.arc-list dl dt' 'a' | ./jrrs.sh ituring
 
-curl -s http://d.163.com/ | iconv -f GBK -t UTF-8 > ,t
-j.rip -u http://d.163.com/ ,t 'div.blog-articles div.article-wrapper' 'div.article-content h2 a' 'div.article-content h2 a' 'div.article-image a img' | ./jrrs.sh D3_163
+#curl -s http://d.163.com/ | iconv -f GBK -t UTF-8 > ,t
+#j.rip -u http://d.163.com/ ,t 'div.blog-articles div.article-wrapper' 'div.article-content h2 a' 'div.article-content h2 a' 'div.article-image a img' | ./jrrs.sh D3_163
 
 #xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'p.name' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
-xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'div.play-list a' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
+#xunbo() { pq-rip.py http://www.4567.tv/film/id$1.html 'div.play-list a' | perl -pe '$_ = "http://www.4567.tv/film/id'$1'.html|".$_' | $FMR xunbo_$2; }
 
 #xunbo 20296 GameOfThrone
 #xunbo 20663 SiliconValley
@@ -205,9 +207,9 @@ magdown() { proxychains j.rip 'http://cili13.com/?topic_title3='"$1" 'span.b' 'a
 
 webtoon() { j.rip 'http://www.webtoons.com/zh-hans/thriller/'"$1" 'ul#_listUl li' 'span.subj' 'a' 'span.thmb img' | ./jrrs.sh webtoon_$2 ; }
 
-webtoon "tales-of-the-unusual/list?title_no=296" QiQiGuaiGuai
-webtoon "hive/list?title_no=223" ChongXue
-webtoon "jinri/list?title_no=642" JinYaoRi
+#webtoon "tales-of-the-unusual/list?title_no=296" QiQiGuaiGuai
+#webtoon "hive/list?title_no=223" ChongXue
+#webtoon "jinri/list?title_no=642" JinYaoRi
 
 dbfansub() { pq-rip.py http://dbfansub.com/tvshow/$1.html 'article#content div.panel-body div.entry-content table tbody tr td.el-s-left a' | perl -pe '$_ = "http://dbfansub.com/tvshow/'$1'.html|".$_' | $FMR dbfansub_$2; }
 
@@ -219,13 +221,13 @@ xiamp4() { pq-rip.py http://www.xiamp4.com/Html/$1.html 'div.play-list a' | perl
 #xiamp4 GP22444 ZhenTianWan
 #xiamp4 GP23720 Ushijima3
 
-pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
+#pq-rip.py -u http://www.kankanews.com/shanghai/ 'div.listcontent div.list-item a.title' | $FMR KanKanNewsShanghai
 
 #curl -s http://toutiao.io | grep -A 2 '<h3 class="title">' | grep target | sed 's/<\/.*//' | sed 's/.*href="//' | sed 's/">/\|/' | $FMR TouTiao
 
 #j.rip http://www.freebuf.com/ 'div#timeline div.news-info dt' 'a' | ./jrrs.sh FreeBuf
 
-j.rip http://www.dysfz.net/ 'ul.movie-list li h2' 'a' | ./jrrs.sh dysfz
+#j.rip http://www.dysfz.net/ 'ul.movie-list li h2' 'a' | ./jrrs.sh dysfz
 
 date
 echo ======================================
