@@ -11,11 +11,16 @@ if len(sys.argv) < 2:
 
 name = sys.argv[1]
 
+if len(sys.argv) >= 3:
+    link = sys.argv[2]
+else:
+    link = 'https://www.baidu.com/'
+
 items = json.loads(sys.stdin.read())
 
 rss = PyRSS2Gen.RSS2(
     title = name,
-    link = 'https://www.baidu.com/',
+    link = link,
     description = name,
     lastBuildDate = datetime.datetime.utcnow(),
     items = [

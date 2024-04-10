@@ -15,7 +15,7 @@ while(<HTML>){
 close HTML;
 
 @result = @result[0..9];
-open RSS, "| ./json2rss.py 6vhao > /tmp/6vhao.xml";
+open RSS, "| ./json2rss.py 6vhao http://www.6vhao.tv > /tmp/6vhao.xml";
 print RSS to_json(\@result);
 close RSS;
 
